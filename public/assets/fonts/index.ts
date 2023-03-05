@@ -55,4 +55,5 @@ export const Satoshi = localFont({
       style: "normal",
     },
   ],
+  variable: "--satoshi",
 });
