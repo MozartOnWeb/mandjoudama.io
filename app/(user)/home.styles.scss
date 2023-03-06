@@ -1,0 +1,97 @@
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 10em;
+  .info-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-family: $fav-font;
+      color: $black;
+      font-size: 6rem;
+      font-weight: 400;
+    }
+    p {
+      margin-top: 0.6em;
+      font-family: $body-font;
+      color: $black;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      font-weight: 400;
+    }
+    svg {
+      width: 12em;
+      height: 12em;
+      justify-self: flex-end;
+    }
+  }
+  .video-container {
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  .horizontal-bar {
+    position: absolute;
+    background-color: $black;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -5em;
+  }
+
+  @media screen and (max-width: 916px) {
+    flex-direction: column;
+    gap: 7em;
+    .info-container {
+      width: 100%;
+      h1 {
+        font-size: 6rem;
+      }
+      p {
+        margin-top: 1em;
+      }
+      svg {
+        margin-top: 3em;
+      }
+    }
+
+    .video-container {
+      height: 40vh;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    gap: 5em;
+    .info-container {
+      h1 {
+        font-size: 3.8rem;
+      }
+      p {
+        margin-top: 1em;
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .info-container {
+      h1 {
+        font-size: 2.8rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+      svg {
+        width: 8em;
+        height: 8em;
+      }
+    }
+  }
+}
