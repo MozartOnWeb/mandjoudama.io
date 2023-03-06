@@ -148,4 +148,16 @@
       }
     }
   }
+
+  @media screen and (max-width: 777px) {
+    flex-direction: column;
+
+    .vertical-bar {
+      display: none;
+    }
+
+    .clients-logo-container {
+      width: 100%;
+    }
+  }
 }
