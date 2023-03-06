@@ -217,4 +217,41 @@ nav {
     position: absolute;
     top: 7em;
   }
+
+  svg {
+    display: none;
+  }
+
+  //media queries
+  @media screen and (max-width: 915px) {
+    .linksWrapper .links .link {
+      display: none;
+    }
+    svg {
+      display: block;
+      height: 4em;
+      width: 4em;
+      cursor: pointer;
+      path {
+        fill: $black;
+        stroke-width: 1px;
+      }
+    }
+  }
+  @media screen and (max-width: 676px) {
+    .linksWrapper {
+      gap: 1em;
+    }
+    .socials {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .links {
+      display: none;
+    }
+    .vertical-bar {
+      display: none;
+    }
+  }
 }

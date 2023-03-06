@@ -11,9 +11,15 @@ export default function Navbar() {
 
       <div className="linksWrapper">
         <div className="links">
-          <Link href={""}>Services</Link>
-          <Link href={""}>Travaux</Link>
-          <Link href={""}>Blog</Link>
+          <Link className="link" href={""}>
+            Services
+          </Link>
+          <Link className="link" href={""}>
+            Travaux
+          </Link>
+          <Link className="link" href={""}>
+            Blog
+          </Link>
           <Link className="lets-talk" href={""}>
             <span className="one">
               <span>L</span>
@@ -49,6 +55,21 @@ export default function Navbar() {
           <Link href={""}>LI</Link>
           <Link href={""}>TW</Link>
         </div>
+
+        {/* Hamburger Menu */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
       </div>
 
       <div className="horizontal-bar" />
