@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 import { useHamburger } from "@/stores/useHamburger";
+
+import { LogoSvg } from "@/public/assets/icons";
 import Hamburger from "../hamburger/Hamburger";
 
 import { AnimatePresence } from "framer-motion";
@@ -29,6 +31,7 @@ export default function Navbar() {
   return (
     <nav>
       <Link href={""} className="logo">
+        <LogoSvg />
         Mandjou Dama.
       </Link>
 

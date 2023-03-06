@@ -14,6 +14,14 @@ nav {
     text-transform: uppercase;
     text-decoration: none;
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    svg {
+      display: block;
+      width: 3em;
+      height: 3em;
+    }
   }
 
   .linksWrapper {
@@ -219,7 +227,7 @@ nav {
     top: 7em;
   }
 
-  svg {
+  .hamburger-menu {
     display: none;
   }
 
@@ -228,7 +236,7 @@ nav {
     .linksWrapper .links .link {
       display: none;
     }
-    svg {
+    .hamburger-menu {
       display: block;
       height: 4em;
       width: 4em;

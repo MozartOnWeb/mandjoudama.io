@@ -1,3 +1,50 @@
+export const LogoSvg = () => {
+  return (
+    <svg
+      width="86"
+      height="75"
+      viewBox="0 0 86 75"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M85 37.3781H43.2073L22.311 1.24115H64.1037L85 37.3781Z"
+        stroke="#B8B8B8"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M85 37.3782H43.2073L22.311 73.5747H64.1037L85 37.3782Z"
+        stroke="#B8B8B8"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M30.8243 16.0055H55.5308L67.9138 37.3781L55.5308 58.8103H30.8243L18.4413 37.3781L30.8243 16.0055Z"
+        fill="#191919"
+      />
+      <path
+        d="M22.311 1.24115H64.1037L85 37.3781L64.1037 73.5747H22.311L1.41461 37.3781L22.311 1.24115Z"
+        stroke="#B8B8B8"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M64.1037 1.24115L43.2073 37.3781L64.1037 73.5747L85 37.3781L64.1037 1.24115Z"
+        stroke="#B8B8B8"
+        strokeMiterlimit="10"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M43.2073 37.3782H1.41461L22.311 73.5747H64.1037L43.2073 37.3782Z"
+        stroke="#B8B8B8"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 export const ArrowUturnLeft = () => {
   return (
     <svg
