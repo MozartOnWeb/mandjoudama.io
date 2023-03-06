@@ -1,5 +1,8 @@
 import "../../sass/index.scss";
 
+//import components
+import Navbar from "@/components/navbar/Navbar";
+
 //import fonts
 import { Neue_Mechanica, Roboto_Mono, Satoshi } from "@/public/assets/fonts";
 
@@ -39,7 +42,10 @@ export default function RootLayout({
       <body
         className={`${Neue_Mechanica.variable} ${Roboto_Mono.variable} ${Satoshi.variable}`}
       >
-        {children}
+        <main className="container">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
