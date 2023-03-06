@@ -1,8 +1,9 @@
-import { HeroIcon } from "@/public/assets/icons";
+import { HeroIcon, LogoSvg } from "@/public/assets/icons";
 
 export default function Home() {
   return (
     <main className="home">
+      {/* HERO SECTION */}
       <section className="hero">
         <div className="info-container">
           <div>
@@ -26,7 +27,23 @@ export default function Home() {
             src={require("../../public/assets/videos/hero.mp4")}
           ></video>
         </div>
-        <span className="horizontal-bar" />
+      </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
+
+      {/* OUR CLIENT SECTION */}
+      <section className="our-client-container">
+        <h2>Our Clients</h2>
+        <span className="vertical-bar" />
+        <div className="clients-logo-container">
+          <LogoSvg />
+          <LogoSvg />
+          <LogoSvg />
+          <LogoSvg />
+          <LogoSvg />
+          <LogoSvg />
+        </div>
       </section>
     </main>
   );
