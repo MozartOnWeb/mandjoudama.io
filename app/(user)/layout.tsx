@@ -8,10 +8,10 @@ import { Neue_Mechanica, Roboto_Mono, Satoshi } from "@/public/assets/fonts";
 
 export const metadata = {
   title: {
-    default: "Next & Sanity Boilerplate",
-    template: "%s | Next & Sanity Boilerplate",
+    default: "Mandjou Dama",
+    template: "%s | Mandjou Dama",
   },
-  keywords: ["Next.js", "Sanity.io", "Boilerplate"],
+  keywords: ["Mandjou", "Dama"],
   robots: {
     index: true,
     follow: true,
@@ -24,7 +24,7 @@ export const metadata = {
     },
   },
   icons: {
-    shortcut: "/favicon.ico",
+    shortcut: "../favicon.ico",
   },
   verification: {
     //google: "eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw",
