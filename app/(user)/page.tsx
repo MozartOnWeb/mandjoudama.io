@@ -20,7 +20,9 @@ export default function Home() {
         </div>
         <div className="video-container">
           <video
-            autoPlay={true}
+            autoPlay
+            loop
+            muted
             src={require("../../public/assets/videos/hero.mp4")}
           ></video>
         </div>
