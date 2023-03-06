@@ -13,6 +13,7 @@ nav {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
+    margin: 0;
   }
 
   .linksWrapper {
@@ -29,7 +30,7 @@ nav {
 
     a {
       position: relative;
-      font-family: $heading-font;
+      font-family: $body-font;
       color: $black;
       font-size: 1.6rem;
       font-weight: 400;
@@ -194,7 +195,7 @@ nav {
     gap: 1em;
 
     a {
-      font-family: $heading-font;
+      font-family: $body-font;
       color: $black;
       font-size: 1.4rem;
       font-weight: 400;
@@ -276,6 +277,9 @@ nav {
   }
 
   @media screen and (max-width: 676px) {
+    .logo {
+      margin-top: 0.3em;
+    }
     .linksWrapper {
       gap: 1em;
     }

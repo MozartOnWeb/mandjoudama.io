@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import Link from "next/link";
 
 import { useHamburger } from "@/stores/useHamburger";
+import Hamburger from "../hamburger/Hamburger";
+
+import { AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const isOpened = useHamburger((state) => state.isOpened);
@@ -47,7 +50,7 @@ export default function Navbar() {
               <span>t</span>
               <span>&apos;</span>
               <span>s</span>
-              <span> </span>
+              <span>&nbsp;</span>
               <span>t</span>
               <span>a</span>
               <span>l</span>
@@ -59,7 +62,7 @@ export default function Navbar() {
               <span>t</span>
               <span>&apos;</span>
               <span>s</span>
-              <span> </span>
+              <span>&nbsp;</span>
               <span>t</span>
               <span>a</span>
               <span>l</span>
@@ -97,6 +100,7 @@ export default function Navbar() {
       </div>
 
       <div className="horizontal-bar" />
+      <AnimatePresence>{isOpened && <Hamburger />}</AnimatePresence>
     </nav>
   );
 }
