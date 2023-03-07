@@ -41,7 +41,7 @@ export default function Navbar() {
             Services
           </Link>
           <Link className="link" href={""}>
-            Travaux
+            Works
           </Link>
           <Link className="link" href={""}>
             Blog

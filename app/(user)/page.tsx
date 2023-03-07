@@ -1,8 +1,16 @@
-import { HeroIcon } from "@/public/assets/icons";
+import {
+  BrandingIcon,
+  ContentIcon,
+  DesignIcon,
+  HeroIcon,
+  LogoSvg,
+  WebDevIcon,
+} from "@/public/assets/icons";
 
 export default function Home() {
   return (
     <main className="home">
+      {/* HERO SECTION */}
       <section className="hero">
         <div className="info-container">
           <div>
@@ -26,8 +34,94 @@ export default function Home() {
             src={require("../../public/assets/videos/hero.mp4")}
           ></video>
         </div>
-        <span className="horizontal-bar" />
       </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
+
+      {/* OUR CLIENT SECTION */}
+      <section className="our-client-container">
+        <h2>Our Clients</h2>
+        <span className="vertical-bar" />
+        <div className="clients-logo-container">
+          <LogoSvg />
+          <LogoSvg />
+          <LogoSvg />
+          <LogoSvg />
+          <LogoSvg />
+          <LogoSvg />
+        </div>
+      </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
+
+      {/* WHAT WE DO SECTION */}
+      <section className="what-we-do-container">
+        <h2>What We Do</h2>
+        <span className="vertical-bar" />
+
+        <div className="services-container">
+          {/* first row */}
+          <div className="services-row">
+            <div className="service">
+              <WebDevIcon />
+              <div className="service-infos">
+                <h5>Web Dev</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+                  ducimus iure tenetur nesciunt perferendis, harum est voluptas
+                  similique quisquam ipsa.
+                </p>
+              </div>
+            </div>
+            <span className="service-vertical-bar" />
+            <div className="service">
+              <DesignIcon />
+              <div className="service-infos">
+                <h5>Design</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+                  ducimus iure tenetur nesciunt perferendis, harum est voluptas
+                  similique quisquam ipsa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <span className="service-horizontal-bar" />
+
+          {/* second row */}
+          <div className="services-row">
+            <div className="service">
+              <BrandingIcon />
+              <div className="service-infos">
+                <h5>Branding</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+                  ducimus iure tenetur nesciunt perferendis, harum est voluptas
+                  similique quisquam ipsa.
+                </p>
+              </div>
+            </div>
+            <span className="service-vertical-bar" />
+            <div className="service">
+              <ContentIcon />
+              <div className="service-infos">
+                <h5>Content</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+                  ducimus iure tenetur nesciunt perferendis, harum est voluptas
+                  similique quisquam ipsa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
     </main>
   );
 }
