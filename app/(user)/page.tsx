@@ -31,7 +31,9 @@ export default function Home() {
             autoPlay={true}
             loop={true}
             muted={true}
+            playsInline={true}
             controls={false}
+            preload="auto"
             src={
               "https://firebasestorage.googleapis.com/v0/b/ikaziccsv.appspot.com/o/hero.mp4?alt=media&token=455c701e-67b5-42e3-ae76-33c5e6019556"
             }
