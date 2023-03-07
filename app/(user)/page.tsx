@@ -182,7 +182,7 @@ export default function Home() {
             <Image src={Image1} alt="" />
             <div className="project-details-container">
               <p className="name">Dancing Stars</p>
-              <p className="data">2022</p>
+              <p className="date">2022</p>
             </div>
           </div>
 
@@ -194,32 +194,37 @@ export default function Home() {
                 <Image src={Image1} alt="" />
                 <div className="project-details-container">
                   <p className="name">Dancing Stars</p>
-                  <p className="data">2022</p>
+                  <p className="date">2022</p>
                 </div>
               </div>
+
               <span className="bottom-projects-row-bar" />
+
               <div className="single-project-container">
                 <Image src={Image1} alt="" />
                 <div className="project-details-container">
                   <p className="name">Dancing Stars</p>
-                  <p className="data">2022</p>
+                  <p className="date">2022</p>
                 </div>
               </div>
             </div>
+
             <div className="bottom-projects-row">
               <div className="single-project-container">
                 <Image src={Image1} alt="" />
                 <div className="project-details-container">
                   <p className="name">Dancing Stars</p>
-                  <p className="data">2022</p>
+                  <p className="date">2022</p>
                 </div>
               </div>
+
               <span className="bottom-projects-row-bar" />
+
               <div className="single-project-container">
                 <Image src={Image1} alt="" />
                 <div className="project-details-container">
                   <p className="name">Dancing Stars</p>
-                  <p className="data">2022</p>
+                  <p className="date">2022</p>
                 </div>
               </div>
             </div>
