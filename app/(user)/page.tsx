@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 import {
   BrandingIcon,
   ContentIcon,
@@ -6,6 +9,8 @@ import {
   LogoSvg,
   WebDevIcon,
 } from "@/public/assets/icons";
+
+import Image1 from "../../public/assets/images/1.jpg";
 
 export default function Home() {
   return (
@@ -127,6 +132,100 @@ export default function Home() {
 
       {/* SEPARATOR */}
       <span className="horizontal-bar" />
+
+      {/* FEATURED WORK */}
+      <section className="featured-work">
+        <div className="left-container">
+          <h2>
+            Featured <br /> Work
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </p>
+          <Link className="see-all-work" href={""}>
+            <span className="one">
+              <span>S</span>
+              <span>e</span>
+              <span>e</span>
+              <span>&nbsp;</span>
+              <span>a</span>
+              <span>l</span>
+              <span>l</span>
+              <span>&nbsp;</span>
+              <span>w</span>
+              <span>o</span>
+              <span>r</span>
+              <span>k</span>
+            </span>
+            <span className="two">
+              <span>S</span>
+              <span>e</span>
+              <span>e</span>
+              <span>&nbsp;</span>
+              <span>a</span>
+              <span>l</span>
+              <span>l</span>
+              <span>&nbsp;</span>
+              <span>w</span>
+              <span>o</span>
+              <span>r</span>
+              <span>k</span>
+            </span>
+          </Link>
+        </div>
+
+        <span className="featured-horizontal-bar" />
+
+        <div className="right-container">
+          <div className="top-project-container">
+            <Image src={Image1} alt="" />
+            <div className="project-details-container">
+              <p className="name">Dancing Stars</p>
+              <p className="data">2022</p>
+            </div>
+          </div>
+
+          <span className="right-container-horizontal-bar" />
+
+          <div className="bottom-projects-container">
+            <div className="bottom-projects-row">
+              <div className="single-project-container">
+                <Image src={Image1} alt="" />
+                <div className="project-details-container">
+                  <p className="name">Dancing Stars</p>
+                  <p className="data">2022</p>
+                </div>
+              </div>
+              <span className="bottom-projects-row-bar" />
+              <div className="single-project-container">
+                <Image src={Image1} alt="" />
+                <div className="project-details-container">
+                  <p className="name">Dancing Stars</p>
+                  <p className="data">2022</p>
+                </div>
+              </div>
+            </div>
+            <div className="bottom-projects-row">
+              <div className="single-project-container">
+                <Image src={Image1} alt="" />
+                <div className="project-details-container">
+                  <p className="name">Dancing Stars</p>
+                  <p className="data">2022</p>
+                </div>
+              </div>
+              <span className="bottom-projects-row-bar" />
+              <div className="single-project-container">
+                <Image src={Image1} alt="" />
+                <div className="project-details-container">
+                  <p className="name">Dancing Stars</p>
+                  <p className="data">2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
