@@ -8,6 +8,7 @@
   }
 }
 
+// HERO SECTION
 .hero {
   position: relative;
   display: flex;
@@ -97,6 +98,7 @@
   }
 }
 
+// OUR CLIENTS SECTION
 .our-client-container {
   display: flex;
   align-items: center;
@@ -157,6 +159,123 @@
     }
 
     .clients-logo-container {
+      width: 100%;
+    }
+  }
+}
+
+// WHAT WE DO SECTION
+.what-we-do-container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  -ms-grid-columns: 0.46fr 1px 1fr;
+  grid-template-columns: 0.46fr 1px 1.5fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  margin: 5em 0em;
+  h2 {
+    font-family: $body-font;
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .vertical-bar {
+    width: 1px;
+    height: 100%;
+    background-color: $black;
+  }
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 7em;
+  }
+
+  .services-row {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    -ms-grid-columns: 1fr 1px 1fr;
+    grid-template-columns: 1fr 1px 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .service {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5em;
+    padding: 2em 1em;
+
+    svg {
+      width: 7em;
+      height: 7em;
+    }
+  }
+
+  .service-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    width: 80%;
+    h5 {
+      font-family: $fav-font;
+      color: $black;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: $body-font;
+      color: $black;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      font-weight: 300;
+    }
+  }
+
+  .service-vertical-bar {
+    height: 100%;
+    width: 1px;
+    background-color: $black;
+    display: block;
+  }
+
+  .service-horizontal-bar {
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+  }
+
+  @media screen and (max-width: 990px) {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    -ms-grid-columns: 0.25fr 1px 1.1fr;
+    grid-template-columns: 0.25fr 1px 1.1fr;
+
+    .services-container {
+      gap: 4em;
+    }
+
+    .services-row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-vertical-bar {
+      height: 1px;
+      width: 100%;
+    }
+
+    .service-infos {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2em;
       width: 100%;
     }
   }
