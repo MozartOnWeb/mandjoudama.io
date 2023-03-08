@@ -24,7 +24,7 @@ export const metadata = {
     },
   },
   icons: {
-    shortcut: "../favicon.ico",
+    shortcut: "./favicon.ico",
   },
   verification: {
     //google: "eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw",

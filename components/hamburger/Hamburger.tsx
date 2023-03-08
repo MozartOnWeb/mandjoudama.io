@@ -21,7 +21,7 @@ export default function Hamburger() {
       <div>
         <Link href={""}>Services</Link>
         <span />
-        <Link href={""}>Travaux</Link>
+        <Link href={""}>Works</Link>
         <span />
         <Link href={""}>Blog</Link>
         <span />

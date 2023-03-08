@@ -24,8 +24,8 @@ export default function Home() {
             </h1>
             <p className="subline">
               Are you looking for perfect website ? Then you are in the right
-              place. get professional results you are looking for. Your work
-              will be done on time and as you require. just reach out and let me
+              place. Get professional results you are looking for. Your work
+              will be done on time and as you require. Just reach out and let me
               know your needs.
             </p>
           </div>

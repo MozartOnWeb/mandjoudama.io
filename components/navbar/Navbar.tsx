@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
-
 import Link from "next/link";
 
 import { useHamburger } from "@/stores/useHamburger";

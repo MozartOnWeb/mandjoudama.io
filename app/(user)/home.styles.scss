@@ -80,6 +80,7 @@
       }
       p {
         margin-top: 1em;
+        font-weight: 300;
       }
     }
   }
@@ -89,7 +90,8 @@
         font-size: 2.8rem;
       }
       p {
-        font-size: 1.4rem;
+        font-size: 1.9rem;
+        line-height: 1.3em;
       }
       svg {
         width: 8em;
@@ -309,6 +311,11 @@
       gap: 3em;
       h5 {
         font-size: 2rem;
+      }
+      p {
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 1.2em;
       }
     }
     .services-row {
@@ -601,6 +608,10 @@
       h2 {
         font-size: 5rem;
         margin-bottom: 0.4em;
+      }
+      p {
+        font-size: 2.2rem;
+        font-weight: 300;
       }
     }
     .right-container {
