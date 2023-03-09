@@ -6,6 +6,7 @@ import {
   ContentIcon,
   DesignIcon,
   HeroIcon,
+  HowWeWorkIcon,
   LogoSvg,
   WebDevIcon,
 } from "@/public/assets/icons";
@@ -229,6 +230,60 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
+
+      {/* HOW WE WORK */}
+      <section className="how-we-work">
+        <div className="left">
+          <div>
+            <h2>How we work</h2>
+            <h5>We help our clients succeed with innovative strategies.</h5>
+          </div>
+
+          <HowWeWorkIcon />
+        </div>
+
+        <span className="how-we-work-vertical" />
+
+        <div className="right">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua magna ac
+            placerat erat.
+          </p>
+
+          <Link className="my-services" href={""}>
+            <span className="one">
+              <span>m</span>
+              <span>y</span>
+              <span>&nbsp;</span>
+              <span>s</span>
+              <span>e</span>
+              <span>r</span>
+              <span>v</span>
+              <span>i</span>
+              <span>c</span>
+              <span>e</span>
+              <span>s</span>
+            </span>
+            <span className="two">
+              <span>m</span>
+              <span>y</span>
+              <span>&nbsp;</span>
+              <span>s</span>
+              <span>e</span>
+              <span>r</span>
+              <span>v</span>
+              <span>i</span>
+              <span>c</span>
+              <span>e</span>
+              <span>s</span>
+            </span>
+          </Link>
         </div>
       </section>
 
