@@ -369,3 +369,36 @@ export const HowWeWorkIcon = () => {
     </svg>
   );
 };
+
+export const HomeContactIcon = () => {
+  return (
+    <svg
+      width="120"
+      height="120"
+      viewBox="0 0 120 120"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M119.25 0.75L119.25 58.1893L61.8107 0.749997L119.25 0.75Z"
+        stroke="#191919"
+        stroke-width="1.5"
+      />
+      <path
+        d="M59.25 0.75L59.25 58.1893L1.81066 0.749997L59.25 0.75Z"
+        stroke="#B8B8B8"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M59.25 60.75L59.25 118.189L1.81066 60.75L59.25 60.75Z"
+        stroke="#191919"
+        strokeWidth="1.5"
+      />
+      <path
+        d="M119.25 60.75L119.25 118.189L61.8107 60.75L119.25 60.75Z"
+        stroke="#B8B8B8"
+        strokeWidth="1.5"
+      />
+    </svg>
+  );
+};

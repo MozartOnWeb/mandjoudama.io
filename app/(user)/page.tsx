@@ -6,6 +6,7 @@ import {
   ContentIcon,
   DesignIcon,
   HeroIcon,
+  HomeContactIcon,
   HowWeWorkIcon,
   LogoSvg,
   WebDevIcon,
@@ -289,6 +290,124 @@ export default function Home() {
 
       {/* SEPARATOR */}
       <span className="horizontal-bar" />
+
+      {/* OUR VALUES SECTION */}
+      <section className="our-values-container">
+        <h2 className="our-values-headline">Our values</h2>
+
+        <span className="values-headline-separator" />
+
+        <div className="values-bottom-container">
+          <div className="left">
+            <Image src={Image1} alt="values image" />
+          </div>
+
+          <span className="values-bottom-separator" />
+
+          <div className="right">
+            {/* RIGHT ITEMS */}
+
+            <div className="right-item">
+              <p className="number">01</p>
+
+              <div className="content">
+                <h5>Vision</h5>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officia, ullam aliquid velit expedita laborum atque amet aut
+                  officiis corrupti quidem!
+                </p>
+              </div>
+            </div>
+
+            <span className="right-item-separator" />
+
+            <div className="right-item">
+              <p className="number">02</p>
+
+              <div className="content">
+                <h5>Innovation</h5>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officia, ullam aliquid velit expedita laborum atque amet aut
+                  officiis corrupti quidem!
+                </p>
+              </div>
+            </div>
+
+            <span className="right-item-separator" />
+
+            <div className="right-item">
+              <p className="number">03</p>
+
+              <div className="content">
+                <h5>Connection</h5>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officia, ullam aliquid velit expedita laborum atque amet aut
+                  officiis corrupti quidem!
+                </p>
+              </div>
+            </div>
+
+            {/* RIGHT ITEMS */}
+          </div>
+        </div>
+      </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
+
+      {/* HOME CONTACT CONTAINER */}
+      <section className="home-contact-container">
+        <div className="left">
+          <div className="left-content">
+            <h2>Contact</h2>
+            <h5>Let&apos;s bring your brand to the next level</h5>
+          </div>
+
+          <HomeContactIcon />
+        </div>
+
+        <span className="home-contact-separator" />
+
+        <div className="right">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua magna ac
+            placerat erat.
+          </p>
+
+          <Link className="my-services" href={""}>
+            <span className="one">
+              <span>m</span>
+              <span>y</span>
+              <span>&nbsp;</span>
+              <span>s</span>
+              <span>e</span>
+              <span>r</span>
+              <span>v</span>
+              <span>i</span>
+              <span>c</span>
+              <span>e</span>
+              <span>s</span>
+            </span>
+            <span className="two">
+              <span>m</span>
+              <span>y</span>
+              <span>&nbsp;</span>
+              <span>s</span>
+              <span>e</span>
+              <span>r</span>
+              <span>v</span>
+              <span>i</span>
+              <span>c</span>
+              <span>e</span>
+              <span>s</span>
+            </span>
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }
