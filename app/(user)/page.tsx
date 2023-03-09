@@ -299,7 +299,9 @@ export default function Home() {
           <div className="left">
             <Image src={Image1} alt="values image" />
           </div>
+
           <span className="values-bottom-separator" />
+
           <div className="right">
             {/* RIGHT ITEMS */}
 
