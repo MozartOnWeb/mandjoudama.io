@@ -1047,6 +1047,18 @@
       }
     }
   }
+
+  @media screen and (max-width: 347px) {
+    .right {
+      min-height: 80vh;
+
+      .content {
+        h5 {
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
 }
 
 //HOME CONTACT
@@ -1236,6 +1248,61 @@
 
     .two span:nth-child(11) {
       transition: 1.15s;
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1px 0.4fr;
+    grid-template-areas:
+      "left"
+      "center"
+      "right ";
+    .left {
+      grid-area: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        margin-bottom: 2em;
+      }
+
+      h5 {
+        font-size: 6rem;
+      }
+
+      svg {
+        width: 8.5em;
+        height: 8.5em;
+      }
+    }
+
+    .home-contact-separator {
+      grid-area: center;
+      height: 1px;
+      width: 100%;
+      margin: 0;
+    }
+
+    .right {
+      grid-area: right;
+    }
+  }
+
+  @media screen and (max-width: 585px) {
+    .left {
+      gap: 3.5em;
+    }
+    .right {
+      gap: 3.5em;
+    }
+  }
+
+  @media screen and (max-width: 443px) {
+    .left h5 {
+      font-size: 4rem;
     }
   }
 }
