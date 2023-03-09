@@ -178,59 +178,62 @@ export default function Home() {
         <span className="featured-horizontal-bar" />
 
         <div className="right-container">
-          <div className="top-project-container">
+          <Link href={""} className="top-project-container">
             <Image src={Image1} alt="" />
             <div className="project-details-container">
               <p className="name">Dancing Stars</p>
               <p className="date">2022</p>
             </div>
-          </div>
+          </Link>
 
           <span className="right-container-horizontal-bar" />
 
           <div className="bottom-projects-container">
             <div className="bottom-projects-row">
-              <div className="single-project-container">
+              <Link href={""} className="single-project-container">
                 <Image src={Image1} alt="" />
                 <div className="project-details-container">
                   <p className="name">Dancing Stars</p>
                   <p className="date">2022</p>
                 </div>
-              </div>
+              </Link>
 
               <span className="bottom-projects-row-bar" />
 
-              <div className="single-project-container">
+              <Link href={""} className="single-project-container">
                 <Image src={Image1} alt="" />
                 <div className="project-details-container">
                   <p className="name">Dancing Stars</p>
                   <p className="date">2022</p>
                 </div>
-              </div>
+              </Link>
             </div>
 
             <div className="bottom-projects-row">
-              <div className="single-project-container">
+              <Link href={""} className="single-project-container">
                 <Image src={Image1} alt="" />
                 <div className="project-details-container">
                   <p className="name">Dancing Stars</p>
                   <p className="date">2022</p>
                 </div>
-              </div>
+              </Link>
 
               <span className="bottom-projects-row-bar" />
 
-              <div className="single-project-container">
+              <Link href={""} className="single-project-container">
                 <Image src={Image1} alt="" />
                 <div className="project-details-container">
                   <p className="name">Dancing Stars</p>
                   <p className="date">2022</p>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
       </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
     </main>
   );
 }
