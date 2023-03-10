@@ -299,7 +299,17 @@ export default function Home() {
 
         <div className="values-bottom-container">
           <div className="left">
-            <Image src={Image1} alt="values image" />
+            <video
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+              controls={false}
+              preload="auto"
+              src={
+                "https://firebasestorage.googleapis.com/v0/b/ikaziccsv.appspot.com/o/hero.mp4?alt=media&token=455c701e-67b5-42e3-ae76-33c5e6019556"
+              }
+            ></video>
           </div>
 
           <span className="values-bottom-separator" />
@@ -358,7 +368,7 @@ export default function Home() {
       {/* SEPARATOR */}
       <span className="horizontal-bar" />
 
-      {/* HOME CONTACT CONTAINER */}
+      {/* HOME CONTACT */}
       <section className="home-contact-container">
         <div className="left">
           <div className="left-content">
@@ -408,6 +418,91 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
+
+      {/* LATEST POSTS */}
+      <section className="home-latest-posts">
+        <div className="latest-posts-headline">
+          <h2>Latest Posts</h2>
+          <Link className="view-all" href={""}>
+            <span className="one">
+              <span>v</span>
+              <span>i</span>
+              <span>e</span>
+              <span>w</span>
+              <span>&nbsp;</span>
+              <span>a</span>
+              <span>l</span>
+              <span>l</span>
+            </span>
+            <span className="two">
+              <span>v</span>
+              <span>i</span>
+              <span>e</span>
+              <span>w</span>
+              <span>&nbsp;</span>
+              <span>a</span>
+              <span>l</span>
+              <span>l</span>
+            </span>
+          </Link>
+        </div>
+
+        <span className="home-latest-headline-separator" />
+
+        <div className="posts-container">
+          <div className="single-post">
+            <Link href={""}>
+              <Image className="post-image" src={Image1} alt="post-image" />
+            </Link>
+
+            <Link className="category" href={""}>
+              Branding
+            </Link>
+
+            <Link className="description" href={""}>
+              Things to Look for When Comparing Branding Alternatives.
+            </Link>
+          </div>
+
+          <span className="post-separator" />
+
+          <div className="single-post">
+            <Link href={""}>
+              <Image className="post-image" src={Image1} alt="post-image" />
+            </Link>
+
+            <Link className="category" href={""}>
+              Branding
+            </Link>
+
+            <Link className="description" href={""}>
+              Things to Look for When Comparing Branding Alternatives.
+            </Link>
+          </div>
+
+          <span className="post-separator" />
+
+          <div className="single-post">
+            <Link href={""}>
+              <Image className="post-image" src={Image1} alt="post-image" />
+            </Link>
+
+            <Link className="category" href={""}>
+              Branding
+            </Link>
+
+            <Link className="description" href={""}>
+              Things to Look for When Comparing Branding Alternatives.
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
     </main>
   );
 }
