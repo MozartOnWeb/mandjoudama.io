@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
+//import components
+import { AnimatedButton } from "@/components/buttons/AnimatedButton";
+
 import {
   BrandingIcon,
   ContentIcon,
@@ -145,36 +148,22 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
           </p>
-          <Link className="see-all-work" href={""}>
-            <span className="one">
-              <span>S</span>
-              <span>e</span>
-              <span>e</span>
-              <span>&nbsp;</span>
-              <span>a</span>
-              <span>l</span>
-              <span>l</span>
-              <span>&nbsp;</span>
-              <span>w</span>
-              <span>o</span>
-              <span>r</span>
-              <span>k</span>
-            </span>
-            <span className="two">
-              <span>S</span>
-              <span>e</span>
-              <span>e</span>
-              <span>&nbsp;</span>
-              <span>a</span>
-              <span>l</span>
-              <span>l</span>
-              <span>&nbsp;</span>
-              <span>w</span>
-              <span>o</span>
-              <span>r</span>
-              <span>k</span>
-            </span>
-          </Link>
+          <AnimatedButton
+            letters={[
+              "s",
+              "e",
+              "e",
+              "\u00a0",
+              "a",
+              "l",
+              "l",
+              "\u00a0",
+              "w",
+              "o",
+              "r",
+              "k",
+            ]}
+          />
         </div>
 
         <span className="featured-horizontal-bar" />
@@ -257,34 +246,21 @@ export default function Home() {
             placerat erat.
           </p>
 
-          <Link className="my-services" href={""}>
-            <span className="one">
-              <span>m</span>
-              <span>y</span>
-              <span>&nbsp;</span>
-              <span>s</span>
-              <span>e</span>
-              <span>r</span>
-              <span>v</span>
-              <span>i</span>
-              <span>c</span>
-              <span>e</span>
-              <span>s</span>
-            </span>
-            <span className="two">
-              <span>m</span>
-              <span>y</span>
-              <span>&nbsp;</span>
-              <span>s</span>
-              <span>e</span>
-              <span>r</span>
-              <span>v</span>
-              <span>i</span>
-              <span>c</span>
-              <span>e</span>
-              <span>s</span>
-            </span>
-          </Link>
+          <AnimatedButton
+            letters={[
+              "m",
+              "y",
+              "\u00a0",
+              "s",
+              "e",
+              "r",
+              "v",
+              "i",
+              "c",
+              "e",
+              "s",
+            ]}
+          />
         </div>
       </section>
 
@@ -387,35 +363,21 @@ export default function Home() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua magna ac
             placerat erat.
           </p>
-
-          <Link className="my-services" href={""}>
-            <span className="one">
-              <span>m</span>
-              <span>y</span>
-              <span>&nbsp;</span>
-              <span>s</span>
-              <span>e</span>
-              <span>r</span>
-              <span>v</span>
-              <span>i</span>
-              <span>c</span>
-              <span>e</span>
-              <span>s</span>
-            </span>
-            <span className="two">
-              <span>m</span>
-              <span>y</span>
-              <span>&nbsp;</span>
-              <span>s</span>
-              <span>e</span>
-              <span>r</span>
-              <span>v</span>
-              <span>i</span>
-              <span>c</span>
-              <span>e</span>
-              <span>s</span>
-            </span>
-          </Link>
+          <AnimatedButton
+            letters={[
+              "m",
+              "y",
+              "\u00a0",
+              "s",
+              "e",
+              "r",
+              "v",
+              "i",
+              "c",
+              "e",
+              "s",
+            ]}
+          />
         </div>
       </section>
 
@@ -426,28 +388,10 @@ export default function Home() {
       <section className="home-latest-posts">
         <div className="latest-posts-headline">
           <h2>Latest Posts</h2>
-          <Link className="view-all" href={""}>
-            <span className="one">
-              <span>v</span>
-              <span>i</span>
-              <span>e</span>
-              <span>w</span>
-              <span>&nbsp;</span>
-              <span>a</span>
-              <span>l</span>
-              <span>l</span>
-            </span>
-            <span className="two">
-              <span>v</span>
-              <span>i</span>
-              <span>e</span>
-              <span>w</span>
-              <span>&nbsp;</span>
-              <span>a</span>
-              <span>l</span>
-              <span>l</span>
-            </span>
-          </Link>
+          <AnimatedButton
+            style="outline"
+            letters={["v", "i", "e", "w", "\u00a0", "a", "l", "l"]}
+          />
         </div>
 
         <span className="home-latest-headline-separator" />

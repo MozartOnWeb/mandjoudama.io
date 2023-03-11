@@ -6,6 +6,7 @@ import { useHamburger } from "@/stores/useHamburger";
 
 import { LogoSvg } from "@/public/assets/icons";
 import Hamburger from "../hamburger/Hamburger";
+import { AnimatedButton } from "../buttons/AnimatedButton";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -44,32 +45,20 @@ export default function Navbar() {
           <Link className="link" href={""}>
             Blog
           </Link>
-          <Link className="lets-talk" href={""}>
-            <span className="one">
-              <span>L</span>
-              <span>e</span>
-              <span>t</span>
-              <span>&apos;</span>
-              <span>s</span>
-              <span>&nbsp;</span>
-              <span>t</span>
-              <span>a</span>
-              <span>l</span>
-              <span>k</span>
-            </span>
-            <span className="two">
-              <span>L</span>
-              <span>e</span>
-              <span>t</span>
-              <span>&apos;</span>
-              <span>s</span>
-              <span>&nbsp;</span>
-              <span>t</span>
-              <span>a</span>
-              <span>l</span>
-              <span>k</span>
-            </span>
-          </Link>
+          <AnimatedButton
+            letters={[
+              "l",
+              "e",
+              "t",
+              "\u2019",
+              "s",
+              "\u00a0",
+              "t",
+              "a",
+              "l",
+              "k",
+            ]}
+          />
         </div>
 
         <div className="vertical-bar" />
