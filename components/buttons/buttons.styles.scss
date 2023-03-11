@@ -1,0 +1,148 @@
+.animated-button {
+  text-decoration: none;
+  width: 10em;
+  height: 2.6em;
+  color: $white;
+  background-color: $black;
+  border-radius: 8px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $body-font;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+
+  .one {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &:hover .one {
+    position: absolute;
+  }
+
+  &:hover .one span {
+    transform: translateY(1.5em);
+  }
+
+  .one span:nth-child(1) {
+    transition: 0.1s;
+  }
+
+  .one span:nth-child(2) {
+    transition: 0.2s;
+  }
+
+  .one span:nth-child(3) {
+    transition: 0.3s;
+  }
+
+  .one span:nth-child(4) {
+    transition: 0.4s;
+  }
+
+  .one span:nth-child(5) {
+    transition: 0.5s;
+  }
+
+  .one span:nth-child(6) {
+    transition: 0.6s;
+  }
+
+  .one span:nth-child(7) {
+    transition: 0.7s;
+  }
+
+  .one span:nth-child(8) {
+    transition: 0.8s;
+  }
+
+  .one span:nth-child(9) {
+    transition: 0.85s;
+  }
+
+  .one span:nth-child(10) {
+    transition: 0.9s;
+  }
+
+  .one span:nth-child(11) {
+    transition: 0.95s;
+  }
+
+  .one span:nth-child(12) {
+    transition: 1s;
+  }
+
+  .two {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .two span {
+    transform: translateY(-1.5em);
+  }
+
+  &:hover .two span {
+    transform: translateY(0);
+  }
+
+  .two span {
+    transition: 0.1s;
+  }
+
+  .two span:nth-child(2) {
+    transition: 0.2s;
+  }
+
+  .two span:nth-child(3) {
+    transition: 0.3s;
+  }
+
+  .two span:nth-child(4) {
+    transition: 0.4s;
+  }
+
+  .two span:nth-child(5) {
+    transition: 0.5s;
+  }
+
+  .two span:nth-child(6) {
+    transition: 0.6s;
+  }
+
+  .two span:nth-child(7) {
+    transition: 0.7s;
+  }
+
+  .two span:nth-child(8) {
+    transition: 0.8s;
+  }
+
+  .two span:nth-child(9) {
+    transition: 0.85s;
+  }
+
+  .two span:nth-child(10) {
+    transition: 0.9s;
+  }
+
+  .two span:nth-child(11) {
+    transition: 0.95s;
+  }
+
+  .two span:nth-child(12) {
+    transition: 1s;
+  }
+}
+
+.animated-button.outline {
+  color: $black;
+  background-color: transparent;
+  border: 1px solid $black;
+  border-radius: 8px;
+  width: 6em;
+  box-sizing: content-box;
+  padding: 0em 1em;
+}

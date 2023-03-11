@@ -9,6 +9,7 @@
 }
 
 // HERO SECTION
+// HERO SECTION
 .hero {
   position: relative;
   display: flex;
@@ -102,6 +103,7 @@
 }
 
 // OUR CLIENTS SECTION
+// OUR CLIENTS SECTION
 .our-client-container {
   display: flex;
   align-items: center;
@@ -169,6 +171,7 @@
   }
 }
 
+// WHAT WE DO SECTION
 // WHAT WE DO SECTION
 .what-we-do-container {
   display: grid;
@@ -325,6 +328,7 @@
 }
 
 // FEATURED WORK SECTION
+// FEATURED WORK SECTION
 .featured-work {
   display: grid;
   grid-auto-columns: 1fr;
@@ -359,145 +363,6 @@
       font-size: 2.6rem;
       line-height: 1.2em;
       margin-bottom: 1.8em;
-    }
-  }
-
-  .see-all-work {
-    text-decoration: none;
-    width: 10em;
-    height: 2.6em;
-    color: $white;
-    background-color: $black;
-    border-radius: 8px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: $body-font;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-
-    .one {
-      display: flex;
-      overflow: hidden;
-    }
-
-    &:hover .one {
-      position: absolute;
-    }
-
-    &:hover .one span {
-      transform: translateY(1.5em);
-    }
-
-    .one span:nth-child(1) {
-      transition: 0.2s;
-    }
-
-    .one span:nth-child(2) {
-      transition: 0.3s;
-    }
-
-    .one span:nth-child(3) {
-      transition: 0.4s;
-    }
-
-    .one span:nth-child(4) {
-      transition: 0.5s;
-    }
-
-    .one span:nth-child(5) {
-      transition: 0.6s;
-    }
-
-    .one span:nth-child(6) {
-      transition: 0.7s;
-    }
-
-    .one span:nth-child(7) {
-      transition: 0.8s;
-    }
-
-    .one span:nth-child(8) {
-      transition: 0.8s;
-    }
-
-    .one span:nth-child(9) {
-      transition: 1s;
-    }
-
-    .one span:nth-child(10) {
-      transition: 1.1s;
-    }
-
-    .one span:nth-child(11) {
-      transition: 1.15s;
-    }
-
-    .one span:nth-child(12) {
-      transition: 1.2s;
-    }
-
-    .two {
-      display: flex;
-      position: absolute;
-      overflow: hidden;
-    }
-
-    .two span {
-      transform: translateY(-1.5em);
-    }
-
-    &:hover .two span {
-      transform: translateY(0);
-    }
-
-    .two span {
-      transition: 0.1s;
-    }
-
-    .two span:nth-child(2) {
-      transition: 0.2s;
-    }
-
-    .two span:nth-child(3) {
-      transition: 0.3s;
-    }
-
-    .two span:nth-child(4) {
-      transition: 0.4s;
-    }
-
-    .two span:nth-child(5) {
-      transition: 0.5s;
-    }
-
-    .two span:nth-child(6) {
-      transition: 0.6s;
-    }
-
-    .two span:nth-child(7) {
-      transition: 0.7s;
-    }
-
-    .two span:nth-child(8) {
-      transition: 0.8s;
-    }
-
-    .two span:nth-child(9) {
-      transition: 0.9s;
-    }
-
-    .two span:nth-child(10) {
-      transition: 1s;
-    }
-
-    .two span:nth-child(11) {
-      transition: 1.15s;
-    }
-
-    .two span:nth-child(12) {
-      transition: 1.2s;
     }
   }
 
@@ -647,6 +512,7 @@
 }
 
 //HOW WE WORK
+//HOW WE WORK
 .how-we-work {
   display: grid;
   grid-template-columns: 1fr 1px 0.4fr;
@@ -696,137 +562,6 @@
       font-size: 2rem;
       line-height: 1.4em;
       font-weight: 300;
-    }
-
-    .my-services {
-      text-decoration: none;
-      width: 10em;
-      height: 2.6em;
-      color: $white;
-      background-color: $black;
-      border-radius: 8px;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: $body-font;
-      font-size: 1.6rem;
-      text-transform: uppercase;
-
-      .one {
-        display: flex;
-        overflow: hidden;
-      }
-
-      &:hover .one {
-        position: absolute;
-      }
-
-      &:hover .one span {
-        transform: translateY(1.5em);
-      }
-
-      .one span:nth-child(1) {
-        transition: 0.2s;
-      }
-
-      .one span:nth-child(2) {
-        transition: 0.3s;
-      }
-
-      .one span:nth-child(3) {
-        transition: 0.4s;
-      }
-
-      .one span:nth-child(4) {
-        transition: 0.5s;
-      }
-
-      .one span:nth-child(5) {
-        transition: 0.6s;
-      }
-
-      .one span:nth-child(6) {
-        transition: 0.7s;
-      }
-
-      .one span:nth-child(7) {
-        transition: 0.8s;
-      }
-
-      .one span:nth-child(8) {
-        transition: 0.8s;
-      }
-
-      .one span:nth-child(9) {
-        transition: 1s;
-      }
-
-      .one span:nth-child(10) {
-        transition: 1.1s;
-      }
-
-      .one span:nth-child(11) {
-        transition: 1.15s;
-      }
-
-      .two {
-        display: flex;
-        position: absolute;
-        overflow: hidden;
-      }
-
-      .two span {
-        transform: translateY(-1.5em);
-      }
-
-      &:hover .two span {
-        transform: translateY(0);
-      }
-
-      .two span {
-        transition: 0.1s;
-      }
-
-      .two span:nth-child(2) {
-        transition: 0.2s;
-      }
-
-      .two span:nth-child(3) {
-        transition: 0.3s;
-      }
-
-      .two span:nth-child(4) {
-        transition: 0.4s;
-      }
-
-      .two span:nth-child(5) {
-        transition: 0.5s;
-      }
-
-      .two span:nth-child(6) {
-        transition: 0.6s;
-      }
-
-      .two span:nth-child(7) {
-        transition: 0.7s;
-      }
-
-      .two span:nth-child(8) {
-        transition: 0.8s;
-      }
-
-      .two span:nth-child(9) {
-        transition: 0.9s;
-      }
-
-      .two span:nth-child(10) {
-        transition: 1s;
-      }
-
-      .two span:nth-child(11) {
-        transition: 1.15s;
-      }
     }
   }
 
@@ -887,6 +622,7 @@
 }
 
 //OUR VALUES
+//OUR VALUES
 .our-values-container {
   min-height: 75vh;
 
@@ -913,10 +649,11 @@
   }
 
   .left {
-    height: 75vh;
+    height: 60vh;
     width: 100%;
     border-radius: 15px;
-    img {
+    img,
+    video {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -1030,6 +767,11 @@
     .our-values-headline {
       font-size: 4rem;
     }
+
+    .left {
+      height: 40vh;
+    }
+
     .right-item {
       grid-template-columns: 80px 1fr;
     }
@@ -1065,6 +807,7 @@
   }
 }
 
+//HOME CONTACT
 //HOME CONTACT
 .home-contact-container {
   min-height: 70vh;
@@ -1124,137 +867,6 @@
     }
   }
 
-  .my-services {
-    text-decoration: none;
-    width: 10em;
-    height: 2.6em;
-    color: $white;
-    background-color: $black;
-    border-radius: 8px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: $body-font;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-
-    .one {
-      display: flex;
-      overflow: hidden;
-    }
-
-    &:hover .one {
-      position: absolute;
-    }
-
-    &:hover .one span {
-      transform: translateY(1.5em);
-    }
-
-    .one span:nth-child(1) {
-      transition: 0.2s;
-    }
-
-    .one span:nth-child(2) {
-      transition: 0.3s;
-    }
-
-    .one span:nth-child(3) {
-      transition: 0.4s;
-    }
-
-    .one span:nth-child(4) {
-      transition: 0.5s;
-    }
-
-    .one span:nth-child(5) {
-      transition: 0.6s;
-    }
-
-    .one span:nth-child(6) {
-      transition: 0.7s;
-    }
-
-    .one span:nth-child(7) {
-      transition: 0.8s;
-    }
-
-    .one span:nth-child(8) {
-      transition: 0.8s;
-    }
-
-    .one span:nth-child(9) {
-      transition: 1s;
-    }
-
-    .one span:nth-child(10) {
-      transition: 1.1s;
-    }
-
-    .one span:nth-child(11) {
-      transition: 1.15s;
-    }
-
-    .two {
-      display: flex;
-      position: absolute;
-      overflow: hidden;
-    }
-
-    .two span {
-      transform: translateY(-1.5em);
-    }
-
-    &:hover .two span {
-      transform: translateY(0);
-    }
-
-    .two span {
-      transition: 0.1s;
-    }
-
-    .two span:nth-child(2) {
-      transition: 0.2s;
-    }
-
-    .two span:nth-child(3) {
-      transition: 0.3s;
-    }
-
-    .two span:nth-child(4) {
-      transition: 0.4s;
-    }
-
-    .two span:nth-child(5) {
-      transition: 0.5s;
-    }
-
-    .two span:nth-child(6) {
-      transition: 0.6s;
-    }
-
-    .two span:nth-child(7) {
-      transition: 0.7s;
-    }
-
-    .two span:nth-child(8) {
-      transition: 0.8s;
-    }
-
-    .two span:nth-child(9) {
-      transition: 0.9s;
-    }
-
-    .two span:nth-child(10) {
-      transition: 1s;
-    }
-
-    .two span:nth-child(11) {
-      transition: 1.15s;
-    }
-  }
-
   @media screen and (max-width: 970px) {
     display: grid;
     grid-template-columns: none;
@@ -1307,6 +919,137 @@
   @media screen and (max-width: 443px) {
     .left h5 {
       font-size: 4rem;
+    }
+  }
+}
+
+//HOME LATEST POSTS
+.home-latest-posts {
+  min-height: 55lvh;
+  .latest-posts-headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      font-family: $fav-font;
+      color: $black;
+      font-size: 6rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .home-latest-headline-separator {
+    height: 1px;
+    width: 100%;
+    background-color: $black;
+    margin: 3em 0em 6em 0em;
+    display: block;
+  }
+
+  .posts-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    gap: 5em;
+  }
+
+  .single-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+  }
+
+  .post-image {
+    width: 100%;
+    height: 15vw;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .category {
+    font-family: $body-font;
+    text-decoration: none;
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .description {
+    color: $black;
+    font-family: $body-font;
+    font-size: 2.8rem;
+    text-decoration: none;
+  }
+
+  .post-separator {
+    height: 100%;
+    width: 1px;
+    background-color: $black;
+    display: block;
+  }
+
+  @media screen and (max-width: 890px) {
+    .posts-container :nth-child(n + 4) {
+      display: none;
+    }
+
+    .posts-container {
+      grid-template-columns: 1fr 1px 1fr;
+    }
+
+    .post-image {
+      height: 23vw;
+    }
+  }
+
+  @media screen and (max-width: 554px) {
+    .posts-container {
+      gap: 3em;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    .latest-posts-headline {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 2em;
+
+      h2 {
+        font-size: 4rem;
+      }
+    }
+
+    .posts-container :nth-child(n + 4) {
+      display: block;
+    }
+
+    .posts-container {
+      grid-template-columns: none;
+    }
+
+    .single-post {
+      gap: 1.4em;
+    }
+
+    .single-post:nth-child(5) {
+      display: flex;
+    }
+
+    .post-image {
+      height: 45vw;
+    }
+
+    .description {
+      font-size: 2.4rem;
+    }
+
+    .post-separator {
+      height: 1px;
+      width: 100%;
     }
   }
 }

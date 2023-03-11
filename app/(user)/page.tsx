@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
+//import components
+import { AnimatedButton } from "@/components/buttons/AnimatedButton";
+
 import {
   BrandingIcon,
   ContentIcon,
@@ -145,36 +148,22 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
           </p>
-          <Link className="see-all-work" href={""}>
-            <span className="one">
-              <span>S</span>
-              <span>e</span>
-              <span>e</span>
-              <span>&nbsp;</span>
-              <span>a</span>
-              <span>l</span>
-              <span>l</span>
-              <span>&nbsp;</span>
-              <span>w</span>
-              <span>o</span>
-              <span>r</span>
-              <span>k</span>
-            </span>
-            <span className="two">
-              <span>S</span>
-              <span>e</span>
-              <span>e</span>
-              <span>&nbsp;</span>
-              <span>a</span>
-              <span>l</span>
-              <span>l</span>
-              <span>&nbsp;</span>
-              <span>w</span>
-              <span>o</span>
-              <span>r</span>
-              <span>k</span>
-            </span>
-          </Link>
+          <AnimatedButton
+            letters={[
+              "s",
+              "e",
+              "e",
+              "\u00a0",
+              "a",
+              "l",
+              "l",
+              "\u00a0",
+              "w",
+              "o",
+              "r",
+              "k",
+            ]}
+          />
         </div>
 
         <span className="featured-horizontal-bar" />
@@ -257,34 +246,21 @@ export default function Home() {
             placerat erat.
           </p>
 
-          <Link className="my-services" href={""}>
-            <span className="one">
-              <span>m</span>
-              <span>y</span>
-              <span>&nbsp;</span>
-              <span>s</span>
-              <span>e</span>
-              <span>r</span>
-              <span>v</span>
-              <span>i</span>
-              <span>c</span>
-              <span>e</span>
-              <span>s</span>
-            </span>
-            <span className="two">
-              <span>m</span>
-              <span>y</span>
-              <span>&nbsp;</span>
-              <span>s</span>
-              <span>e</span>
-              <span>r</span>
-              <span>v</span>
-              <span>i</span>
-              <span>c</span>
-              <span>e</span>
-              <span>s</span>
-            </span>
-          </Link>
+          <AnimatedButton
+            letters={[
+              "m",
+              "y",
+              "\u00a0",
+              "s",
+              "e",
+              "r",
+              "v",
+              "i",
+              "c",
+              "e",
+              "s",
+            ]}
+          />
         </div>
       </section>
 
@@ -299,7 +275,17 @@ export default function Home() {
 
         <div className="values-bottom-container">
           <div className="left">
-            <Image src={Image1} alt="values image" />
+            <video
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+              controls={false}
+              preload="auto"
+              src={
+                "https://firebasestorage.googleapis.com/v0/b/ikaziccsv.appspot.com/o/hero.mp4?alt=media&token=455c701e-67b5-42e3-ae76-33c5e6019556"
+              }
+            ></video>
           </div>
 
           <span className="values-bottom-separator" />
@@ -358,7 +344,7 @@ export default function Home() {
       {/* SEPARATOR */}
       <span className="horizontal-bar" />
 
-      {/* HOME CONTACT CONTAINER */}
+      {/* HOME CONTACT */}
       <section className="home-contact-container">
         <div className="left">
           <div className="left-content">
@@ -377,37 +363,90 @@ export default function Home() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua magna ac
             placerat erat.
           </p>
-
-          <Link className="my-services" href={""}>
-            <span className="one">
-              <span>m</span>
-              <span>y</span>
-              <span>&nbsp;</span>
-              <span>s</span>
-              <span>e</span>
-              <span>r</span>
-              <span>v</span>
-              <span>i</span>
-              <span>c</span>
-              <span>e</span>
-              <span>s</span>
-            </span>
-            <span className="two">
-              <span>m</span>
-              <span>y</span>
-              <span>&nbsp;</span>
-              <span>s</span>
-              <span>e</span>
-              <span>r</span>
-              <span>v</span>
-              <span>i</span>
-              <span>c</span>
-              <span>e</span>
-              <span>s</span>
-            </span>
-          </Link>
+          <AnimatedButton
+            letters={[
+              "m",
+              "y",
+              "\u00a0",
+              "s",
+              "e",
+              "r",
+              "v",
+              "i",
+              "c",
+              "e",
+              "s",
+            ]}
+          />
         </div>
       </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
+
+      {/* LATEST POSTS */}
+      <section className="home-latest-posts">
+        <div className="latest-posts-headline">
+          <h2>Latest Posts</h2>
+          <AnimatedButton
+            style="outline"
+            letters={["v", "i", "e", "w", "\u00a0", "a", "l", "l"]}
+          />
+        </div>
+
+        <span className="home-latest-headline-separator" />
+
+        <div className="posts-container">
+          <div className="single-post">
+            <Link href={""}>
+              <Image className="post-image" src={Image1} alt="post-image" />
+            </Link>
+
+            <Link className="category" href={""}>
+              Branding
+            </Link>
+
+            <Link className="description" href={""}>
+              Things to Look for When Comparing Branding Alternatives.
+            </Link>
+          </div>
+
+          <span className="post-separator" />
+
+          <div className="single-post">
+            <Link href={""}>
+              <Image className="post-image" src={Image1} alt="post-image" />
+            </Link>
+
+            <Link className="category" href={""}>
+              Branding
+            </Link>
+
+            <Link className="description" href={""}>
+              Things to Look for When Comparing Branding Alternatives.
+            </Link>
+          </div>
+
+          <span className="post-separator" />
+
+          <div className="single-post">
+            <Link href={""}>
+              <Image className="post-image" src={Image1} alt="post-image" />
+            </Link>
+
+            <Link className="category" href={""}>
+              Branding
+            </Link>
+
+            <Link className="description" href={""}>
+              Things to Look for When Comparing Branding Alternatives.
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SEPARATOR */}
+      <span className="horizontal-bar" />
     </main>
   );
 }
