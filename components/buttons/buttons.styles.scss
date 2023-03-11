@@ -142,5 +142,7 @@
   background-color: transparent;
   border: 1px solid $black;
   border-radius: 8px;
-  width: 8em;
+  width: 6em;
+  box-sizing: content-box;
+  padding: 0em 1em;
 }
