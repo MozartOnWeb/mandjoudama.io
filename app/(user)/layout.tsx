@@ -2,6 +2,7 @@ import "../../sass/index.scss";
 
 //import components
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 //import fonts
 import { Neue_Mechanica, Roboto_Mono, Satoshi } from "@/public/assets/fonts";
@@ -45,6 +46,7 @@ export default function RootLayout({
         <main className="container">
           <Navbar />
           {children}
+          <Footer />
         </main>
       </body>
     </html>
