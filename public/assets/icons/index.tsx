@@ -382,7 +382,7 @@ export const HomeContactIcon = () => {
       <path
         d="M119.25 0.75L119.25 58.1893L61.8107 0.749997L119.25 0.75Z"
         stroke="#191919"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
       <path
         d="M59.25 0.75L59.25 58.1893L1.81066 0.749997L59.25 0.75Z"
