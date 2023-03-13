@@ -12,6 +12,8 @@
 @import "../components/footer/footer.styles.scss";
 @import "../components/hamburger/hamburger.styles.scss";
 @import "../components/buttons/buttons.styles.scss";
+@import "../components/separators/separators.styles.scss";
 
 /* Import pages styles */
 @import "../app/(user)/home.styles.scss";
+@import "../app/(user)/services/services.styles.scss";

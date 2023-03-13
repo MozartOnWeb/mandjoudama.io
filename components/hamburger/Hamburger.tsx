@@ -19,7 +19,7 @@ export default function Hamburger() {
       className="hamburgerContainer"
     >
       <div>
-        <Link href={""}>Services</Link>
+        <Link href={"/services"}>Services</Link>
         <span />
         <Link href={""}>Works</Link>
         <span />

@@ -36,7 +36,7 @@ export default function Navbar() {
 
       <div className="linksWrapper">
         <div className="links">
-          <Link className="link" href={""}>
+          <Link className="link" href={"/services"}>
             Services
           </Link>
           <Link className="link" href={""}>

@@ -1,10 +1,8 @@
-"use client";
-
 import Link from "next/link";
 
 type Props = {
   letters: string[];
-  style?: string;
+  style?: undefined | "outline";
 };
 
 export const AnimatedButton = ({ letters, style }: Props) => {

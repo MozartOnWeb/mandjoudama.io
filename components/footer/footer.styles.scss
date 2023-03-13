@@ -87,4 +87,12 @@ footer {
       text-align: center;
     }
   }
+
+  @media screen and (max-width: 491px) {
+    .top {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
 }

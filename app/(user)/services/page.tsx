@@ -1,0 +1,78 @@
+import { AnimatedButton } from "@/components/buttons/AnimatedButton";
+import {
+  SectionSeparator,
+  VerticalSeparator,
+} from "@/components/separators/Separators";
+
+import { WebDevIcon } from "@/public/assets/icons";
+
+export default function Services() {
+  return (
+    <main className="services">
+      <section className="services-hero">
+        <h1>
+          We create your <br /> brand together.
+        </h1>
+
+        <div className="hero-tags-links">
+          <AnimatedButton
+            style="outline"
+            letters={["w", "e", "b", "\u00a0", "d", "e", "v"]}
+          />
+          <AnimatedButton
+            style="outline"
+            letters={["d", "e", "s", "i", "g", "n"]}
+          />
+          <AnimatedButton
+            style="outline"
+            letters={["b", "r", "a", "n", "d", "i", "n", "g"]}
+          />
+          <AnimatedButton
+            style="outline"
+            letters={["c", "o", "n", "t", "e", "n", " t"]}
+          />
+        </div>
+      </section>
+
+      {/* SEPARATOR */}
+      <SectionSeparator />
+
+      <section className="services-list">
+        <div className="single-service">
+          <div className="left">
+            <div className="service-header">
+              <WebDevIcon />
+              <h2>Web Dev</h2>
+            </div>
+
+            <div className="service-categories">
+              <p>Web Design</p>
+              <p>Web Dev</p>
+            </div>
+
+            <AnimatedButton
+              letters={[
+                "g",
+                "e",
+                "t",
+                "\u00a0",
+                "i",
+                "n",
+                "\u00a0",
+                "t",
+                "o",
+                "u",
+                "c",
+                "h",
+              ]}
+            />
+          </div>
+
+          <VerticalSeparator />
+
+          <div className="right"></div>
+        </div>
+      </section>
+    </main>
+  );
+}
