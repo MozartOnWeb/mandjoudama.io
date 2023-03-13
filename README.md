@@ -10,7 +10,7 @@ This is my personal portfolio website, built using Next.js 13. It showcases my p
 
 ## Screenshots
 
-- **1**: ![Hero Section](https://firebasestorage.googleapis.com/v0/b/projects-screenshots.appspot.com/o/mandjoudama.io%2Fmandjoudama.png?alt=media&token=b34f86a9-9488-44e7-980b-ad178f7fabea)
+- **Hero Section**: ![Hero Section](https://firebasestorage.googleapis.com/v0/b/projects-screenshots.appspot.com/o/mandjoudama.io%2Fmandjoudama.png?alt=media&token=b34f86a9-9488-44e7-980b-ad178f7fabea)
 
 ## TODO
 
