@@ -1,4 +1,4 @@
-## mandjoudama.io
+# mandjoudama.io
 
 This is my personal portfolio website, built using Next.js 13. It showcases my projects, skills, and experience.
 
