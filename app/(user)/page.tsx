@@ -365,17 +365,16 @@ export default function Home() {
           </p>
           <AnimatedButton
             letters={[
-              "m",
-              "y",
+              "l",
+              "e",
+              "t",
+              "\u2019",
+              "s",
               "\u00a0",
-              "s",
-              "e",
-              "r",
-              "v",
-              "i",
-              "c",
-              "e",
-              "s",
+              "t",
+              "a",
+              "l",
+              "k",
             ]}
           />
         </div>
