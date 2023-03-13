@@ -25,7 +25,7 @@ export default function Home() {
         <div className="info-container">
           <div>
             <h1 className="headline">
-              I&apos;m Mandjou, a 24 years old Front-End developer from Mali.
+              I&apos;m Mandjou, a 24 years old Front End developer from Mali.
             </h1>
             <p className="subline">
               Are you looking for perfect website ? Then you are in the right
@@ -365,17 +365,16 @@ export default function Home() {
           </p>
           <AnimatedButton
             letters={[
-              "m",
-              "y",
+              "l",
+              "e",
+              "t",
+              "\u2019",
+              "s",
               "\u00a0",
-              "s",
-              "e",
-              "r",
-              "v",
-              "i",
-              "c",
-              "e",
-              "s",
+              "t",
+              "a",
+              "l",
+              "k",
             ]}
           />
         </div>
