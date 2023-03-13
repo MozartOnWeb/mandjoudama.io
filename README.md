@@ -8,6 +8,10 @@ This is my personal portfolio website, built using Next.js 13. It showcases my p
 - **Styling**: [SCSS](https://sass-lang.com/)
 - **Analytics**: [Vercel Analytics](https://vercel.com/analytics)
 
+## Screenshots
+
+- **1**: ![Hero Section](https://firebasestorage.googleapis.com/v0/b/projects-screenshots.appspot.com/o/mandjoudama.io%2Fmandjoudama.png?alt=media&token=b34f86a9-9488-44e7-980b-ad178f7fabea)
+
 ## TODO
 
 In early 2023, I start creating my site to use the new `app/` directory in Next.js 13. It still in development, and there are still a few things I want to do:
