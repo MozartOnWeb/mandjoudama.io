@@ -37,7 +37,9 @@ export default function Hamburger() {
           Services
         </Link>
         <span />
-        <Link href={""}>Works</Link>
+        <Link onClick={() => handleCloseHamburger()} href={"/work"}>
+          Work
+        </Link>
         <span />
         <Link href={""}>Blog</Link>
         <span />

@@ -1,6 +1,6 @@
 .services {
   .services-hero {
-    min-height: 60dvh;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,6 +33,7 @@
 
   @media screen and (max-width: 500px) {
     .services-hero {
+      min-height: 65vh;
       h1 {
         font-size: 6rem;
       }
