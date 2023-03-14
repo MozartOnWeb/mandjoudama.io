@@ -18,4 +18,24 @@
       gap: 2em;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    .services-hero {
+      h1 {
+        font-size: 8rem;
+      }
+
+      .hero-tags-links {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .services-hero {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
 }

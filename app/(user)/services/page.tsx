@@ -2,6 +2,7 @@ import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import { SectionSeparator } from "@/components/separators/Separators";
 
 import { SingleService } from "@/sections/services/SingleService";
+import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
 
 export default function Services() {
   return (
@@ -40,6 +41,11 @@ export default function Services() {
         <SectionSeparator />
         <SingleService />
       </div>
+
+      {/* SEPARATOR */}
+      <SectionSeparator />
+
+      <LetsTalkSection />
 
       {/* SEPARATOR */}
       <SectionSeparator />
