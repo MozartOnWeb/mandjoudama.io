@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
   SectionSeparator,
@@ -5,6 +7,8 @@ import {
 } from "@/components/separators/Separators";
 
 import { WebDevIcon } from "@/public/assets/icons";
+
+import Image1 from "../../../public/assets/images/1.jpg";
 
 export default function Services() {
   return (
@@ -48,6 +52,7 @@ export default function Services() {
             <div className="service-categories">
               <p>Web Design</p>
               <p>Web Dev</p>
+              <p>Seo Optimization</p>
             </div>
 
             <AnimatedButton
@@ -70,9 +75,36 @@ export default function Services() {
 
           <VerticalSeparator />
 
-          <div className="right"></div>
+          <div className="right">
+            <h5 className="service-headline">
+              Boost your online presence with our cutting-edge web development
+              solutions. We create custom websites that are responsive,
+              user-friendly, and optimized for search engines. Contact us now to
+              learn more!
+            </h5>
+
+            <div className="service-description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis, expedita, est alias natus quae accusamus voluptas
+                totam tempora adipisci in porro asperiores et non deserunt
+                mollitia iusto cumque dignissimos dolor.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis, expedita, est alias natus quae accusamus voluptas
+                totam tempora adipisci in porro asperiores et non deserunt
+                mollitia iusto cumque dignissimos dolor.
+              </p>
+            </div>
+
+            <Image src={Image1} alt="service-img" />
+          </div>
         </div>
       </section>
+
+      {/* SEPARATOR */}
+      <SectionSeparator />
     </main>
   );
 }
