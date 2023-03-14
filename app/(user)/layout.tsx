@@ -13,6 +13,8 @@ export const metadata = {
     template: "%s | Mandjou Dama",
   },
   keywords: ["Mandjou", "Dama"],
+  description:
+    "I'm Mandjou, a 24 years old react.js front-end developer from Mali.",
   robots: {
     index: true,
     follow: true,
