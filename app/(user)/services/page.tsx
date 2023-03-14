@@ -1,4 +1,4 @@
-import { AnimatedButton } from "@/components/buttons/AnimatedButton";
+import { OnPageLink } from "@/components/buttons/OnPageLink";
 import { SectionSeparator } from "@/components/separators/Separators";
 
 import { SingleService } from "@/sections/services/SingleService";
@@ -13,21 +13,15 @@ export default function Services() {
         </h1>
 
         <div className="hero-tags-links">
-          <AnimatedButton
+          <OnPageLink
             style="outline"
             letters={["w", "e", "b", "\u00a0", "d", "e", "v"]}
+            href="#web-dev"
           />
-          <AnimatedButton
+          <OnPageLink
             style="outline"
             letters={["d", "e", "s", "i", "g", "n"]}
-          />
-          <AnimatedButton
-            style="outline"
-            letters={["b", "r", "a", "n", "d", "i", "n", "g"]}
-          />
-          <AnimatedButton
-            style="outline"
-            letters={["c", "o", "n", "t", "e", "n", " t"]}
+            href="#design"
           />
         </div>
       </section>
@@ -36,10 +30,10 @@ export default function Services() {
       <SectionSeparator />
 
       <div>
-        <SingleService />
+        <SingleService id="web-dev" />
         {/* SEPARATOR */}
         <SectionSeparator />
-        <SingleService />
+        <SingleService id="design" />
       </div>
 
       {/* SEPARATOR */}

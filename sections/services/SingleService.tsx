@@ -2,17 +2,23 @@
 
 import { useRef } from "react";
 
-import Image from "next/image";
-
 import { useScroll, useTransform, motion } from "framer-motion";
 
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import { VerticalSeparator } from "@/components/separators/Separators";
 import { WebDevIcon } from "@/public/assets/icons";
 
-import Image1 from "../../public/assets/images/1.jpg";
+type Props = {
+  serviceIcon: JSX.Element;
+  serviceName: string;
+  serviceCategories: string[];
+  serviceHeadline: string;
+  serviceDescription1: string;
+  serviceDescription2: string;
+  serviceVideo: HTMLVideoElement;
+};
 
-export const SingleService = () => {
+export const SingleService = ({ id }: { id: string }) => {
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -24,7 +30,7 @@ export const SingleService = () => {
   });
 
   return (
-    <motion.div ref={targetRef} className="single-service">
+    <motion.div ref={targetRef} id={id} className="single-service">
       <div className="left">
         <div className="left-inner">
           <div className="service-header">
@@ -82,7 +88,17 @@ export const SingleService = () => {
           </p>
         </div>
 
-        <Image src={Image1} alt="service-img" />
+        <video
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          playsInline={true}
+          controls={false}
+          preload="auto"
+          src={
+            "https://firebasestorage.googleapis.com/v0/b/ikaziccsv.appspot.com/o/hero.mp4?alt=media&token=455c701e-67b5-42e3-ae76-33c5e6019556"
+          }
+        ></video>
       </div>
     </motion.div>
   );

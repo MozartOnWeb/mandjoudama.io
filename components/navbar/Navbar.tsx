@@ -48,8 +48,12 @@ export default function Navbar() {
           <Link className="link" href={"/services"}>
             Services
           </Link>
-          <Link className="link" href={""}>
-            Works
+          <Link
+            onClick={() => handleCloseHamburger()}
+            className="link"
+            href={"/work"}
+          >
+            Work
           </Link>
           <Link className="link" href={""}>
             Blog
