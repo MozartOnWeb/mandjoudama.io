@@ -27,16 +27,25 @@ export default function Navbar() {
     }
   };
 
+  const handleCloseHamburger = () => {
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+
+    if (isOpened) {
+      closeHamburger();
+      hamburgerMenu?.classList.remove("active-hamburger");
+    }
+  };
+
   return (
     <nav>
-      <Link href={""} className="logo">
+      <Link onClick={() => handleCloseHamburger()} href={""} className="logo">
         <LogoSvg />
         Mandjou Dama.
       </Link>
 
       <div className="linksWrapper">
         <div className="links">
-          <Link className="link" href={""}>
+          <Link className="link" href={"/services"}>
             Services
           </Link>
           <Link className="link" href={""}>

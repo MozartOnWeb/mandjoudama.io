@@ -1,0 +1,41 @@
+.services {
+  .services-hero {
+    min-height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+      font-family: $fav-font;
+      color: $black;
+      font-size: 10rem;
+      font-weight: 400;
+    }
+
+    .hero-tags-links {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .services-hero {
+      h1 {
+        font-size: 8rem;
+      }
+
+      .hero-tags-links {
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .services-hero {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}
