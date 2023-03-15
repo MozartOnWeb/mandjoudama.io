@@ -1,6 +1,6 @@
 .single-work-page {
   .hero {
-    min-height: 35vh;
+    min-height: 40vh;
     display: grid;
     grid-template-columns: 1fr 1px 0.4fr;
 
@@ -18,7 +18,7 @@
       p {
         font-family: $body-font;
         font-weight: 300;
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         line-height: 1.2em;
       }
     }
@@ -91,6 +91,80 @@
         p {
           font-size: 2.2rem;
         }
+      }
+    }
+  }
+
+  //PROJECT OVERVIEW CONTAINER
+  .project-overview-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.4fr 1px 1fr;
+    gap: 5em;
+
+    .left-inner-container {
+      position: sticky;
+      top: 2em;
+      display: flex;
+      flex-direction: column;
+      gap: 5em;
+    }
+
+    .single-overview {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      svg {
+        width: 6em;
+        height: 6em;
+      }
+
+      h5 {
+        font-family: $fav-font;
+        color: $black;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: $body-font;
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 1.2em;
+      }
+    }
+
+    .right {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 3em;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: none;
+      gap: 3em;
+
+      .vertical-separator {
+        height: 1px;
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 412px) {
+      .left-inner-container {
+        gap: 3em;
+      }
+
+      .single-overview {
+        gap: 1em;
       }
     }
   }
