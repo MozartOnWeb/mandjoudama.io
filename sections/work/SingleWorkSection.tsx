@@ -19,6 +19,7 @@ export const SingleWorkSection = () => {
         </div>
 
         <AnimatedButton
+          href="/works/work"
           style="outline"
           letters={[
             "v",
@@ -38,7 +39,7 @@ export const SingleWorkSection = () => {
       </div>
 
       <div className="right">
-        <Link href={""}>
+        <Link href={"/works/work"}>
           <Image src={Image1} alt="project-img" />
         </Link>
       </div>

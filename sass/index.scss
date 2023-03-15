@@ -17,7 +17,8 @@
 /* Import pages styles */
 @import "../app/(user)/home.styles.scss";
 @import "../app/(user)/services/services.styles.scss";
-@import "../app/(user)/work/work.styles.scss";
+@import "../app/(user)/works/works.styles.scss";
+@import "../app/(user)/works/[work]/work.style.scss";
 
 /* Import sections styles */
 @import "../sections/services/SingleService.styles.scss";
