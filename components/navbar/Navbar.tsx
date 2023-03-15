@@ -51,7 +51,7 @@ export default function Navbar() {
           <Link
             onClick={() => handleCloseHamburger()}
             className="link"
-            href={"/work"}
+            href={"/works"}
           >
             Work
           </Link>

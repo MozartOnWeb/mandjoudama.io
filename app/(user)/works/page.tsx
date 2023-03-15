@@ -4,11 +4,9 @@ import { BrandingIcon } from "@/public/assets/icons";
 
 export default function Work() {
   return (
-    <main className="work-page">
+    <main className="works-page">
       <div className="hero">
-        <h1>
-          Our branding <br /> success stories.
-        </h1>
+        <h1>Our branding success stories.</h1>
 
         <BrandingIcon />
       </div>
