@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { useHamburger } from "@/stores/useHamburger";
 
@@ -10,7 +11,34 @@ import { AnimatedButton } from "../buttons/AnimatedButton";
 
 import { AnimatePresence } from "framer-motion";
 
+const routes = [
+  {
+    id: 0,
+    title: "services",
+    path: "/services",
+  },
+  {
+    id: 1,
+    title: "works",
+    path: "/works",
+  },
+  {
+    id: 2,
+    title: "blogs",
+    path: "/blogs",
+  },
+];
+
 export default function Navbar() {
+  let pathname = usePathname() || "/";
+  if (pathname.includes("/works/")) {
+    pathname = "/work";
+  }
+
+  if (pathname.includes("/blogs/")) {
+    pathname = "/blogs";
+  }
+
   const isOpened = useHamburger((state) => state.isOpened);
   const openHamburger = useHamburger((state) => state.openHamburger);
   const closeHamburger = useHamburger((state) => state.closeHamburger);
@@ -45,19 +73,17 @@ export default function Navbar() {
 
       <div className="linksWrapper">
         <div className="links">
-          <Link className="link" href={"/services"}>
-            Services
-          </Link>
-          <Link
-            onClick={() => handleCloseHamburger()}
-            className="link"
-            href={"/works"}
-          >
-            Work
-          </Link>
-          <Link className="link" href={""}>
-            Blog
-          </Link>
+          {routes.map((route) => (
+            <Link
+              onClick={() => handleCloseHamburger()}
+              key={route.id}
+              className={pathname === route.path ? "link active" : "link"}
+              href={route.path}
+            >
+              {route.title}
+            </Link>
+          ))}
+
           <AnimatedButton
             letters={[
               "l",
