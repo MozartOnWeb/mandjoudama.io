@@ -21,7 +21,7 @@ import Image1 from "../../public/assets/images/1.jpg";
 
 export default function Home() {
   return (
-    <main className="home">
+    <main className="home-page">
       {/* HERO SECTION */}
       <section className="hero">
         <div className="info-container">
