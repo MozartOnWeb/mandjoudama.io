@@ -6,7 +6,12 @@ import {
 } from "@/components/separators/Separators";
 
 import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
-import { LogoSvg } from "@/public/assets/icons";
+import {
+  LogoSvg,
+  WorkChallengeIcon,
+  WorkResultIcon,
+  WorkSolutionIcon,
+} from "@/public/assets/icons";
 
 import Image1 from "../../../../public/assets/images/1.jpg";
 import Image2 from "../../../../public/assets/images/2.jpg";
@@ -65,7 +70,7 @@ export default function Work() {
         <div className="left">
           <div className="left-inner-container">
             <div className="single-overview">
-              <LogoSvg />
+              <WorkChallengeIcon />
               <h5>CHALLENGE</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -75,7 +80,7 @@ export default function Work() {
             </div>
 
             <div className="single-overview">
-              <LogoSvg />
+              <WorkSolutionIcon />
               <h5>Solution</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -85,7 +90,7 @@ export default function Work() {
             </div>
 
             <div className="single-overview">
-              <LogoSvg />
+              <WorkResultIcon />
               <h5>Result</h5>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

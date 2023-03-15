@@ -116,8 +116,8 @@
       gap: 2em;
 
       svg {
-        width: 6em;
-        height: 6em;
+        width: 8em;
+        height: 8em;
       }
 
       h5 {
@@ -159,12 +159,13 @@
     }
 
     @media screen and (max-width: 412px) {
-      .left-inner-container {
-        gap: 3em;
-      }
-
       .single-overview {
-        gap: 1em;
+        gap: 2em;
+
+        svg {
+          width: 6em;
+          height: 6em;
+        }
       }
     }
   }

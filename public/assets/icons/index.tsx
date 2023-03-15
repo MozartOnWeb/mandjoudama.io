@@ -402,3 +402,71 @@ export const HomeContactIcon = () => {
     </svg>
   );
 };
+
+export const WorkChallengeIcon = () => {
+  return (
+    <svg
+      width="116"
+      height="118"
+      viewBox="0 0 116 118"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M38.3553 38.5965H37.6053V39.3465V77.9108H0.75V1.74121H76.9196V38.5965H38.3553Z"
+        stroke="#B8B8B8"
+        stroke-width="1.5"
+      />
+      <path
+        d="M38.3304 118L116 118L116 40.3304L77.6447 40.3304L77.6447 79.6447L38.3304 79.6447L38.3304 118Z"
+        fill="#191919"
+      />
+    </svg>
+  );
+};
+
+export const WorkSolutionIcon = () => {
+  return (
+    <svg
+      width="120"
+      height="120"
+      viewBox="0 0 120 120"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="60" cy="60" r="59.5" stroke="#B8B8B8" />
+      <circle cx="60" cy="60" r="30" fill="#191919" />
+    </svg>
+  );
+};
+
+export const WorkResultIcon = () => {
+  return (
+    <svg
+      width="120"
+      height="120"
+      viewBox="0 0 120 120"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M60.75 90L60.75 60.75L90 60.75C106.154 60.75 119.25 73.8457 119.25 90C119.25 106.154 106.154 119.25 90 119.25C73.8457 119.25 60.75 106.154 60.75 90Z"
+        stroke="#B8B8B8"
+        stroke-width="1.5"
+      />
+      <path
+        d="M30 120C13.4315 120 -5.87108e-07 106.569 -1.31134e-06 90V90C-2.03558e-06 73.4315 13.4315 60 30 60V60C46.5685 60 60 73.4315 60 90V90C60 106.569 46.5685 120 30 120V120Z"
+        fill="#191919"
+      />
+      <path
+        d="M90 -1.31134e-06C73.4315 -5.87108e-07 60 13.4315 60 30L60 60L90 60C106.569 60 120 46.5685 120 30V30C120 13.4315 106.569 -2.03558e-06 90 -1.31134e-06V-1.31134e-06Z"
+        fill="#B8B8B8"
+      />
+      <path
+        d="M59.25 30C59.25 13.8457 46.1543 0.749998 30 0.749999C13.8457 0.749999 0.750001 13.8457 0.750001 30C0.750002 46.1543 13.8457 59.25 30 59.25C46.1543 59.25 59.25 46.1543 59.25 30Z"
+        stroke="#B8B8B8"
+        stroke-width="1.5"
+      />
+    </svg>
+  );
+};
