@@ -23,6 +23,7 @@ export const LetsTalkSection = () => {
           placerat erat.
         </p>
         <AnimatedButton
+          href="/contact"
           letters={["l", "e", "t", "\u2019", "s", "\u00a0", "t", "a", "l", "k"]}
         />
       </div>
