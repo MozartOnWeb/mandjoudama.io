@@ -1,4 +1,4 @@
-.services {
+.services-page {
   .services-hero {
     min-height: 60vh;
     display: flex;
@@ -36,6 +36,14 @@
       min-height: 65vh;
       h1 {
         font-size: 6rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .services-hero {
+      h1 {
+        font-size: 5.4rem;
       }
     }
   }

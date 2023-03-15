@@ -1,6 +1,6 @@
 .single-service {
   display: block;
-  min-height: 100vh;
+  min-height: 90vh;
   display: grid;
   grid-template-columns: 0.4fr 1px 1fr;
   gap: 5em;
@@ -33,7 +33,7 @@
   .service-categories {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 2em;
 
     p {
       font-family: $body-font;

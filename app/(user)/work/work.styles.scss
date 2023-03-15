@@ -1,0 +1,47 @@
+.work-page {
+  .hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-family: $fav-font;
+      color: $black;
+      font-size: 10rem;
+      font-weight: 400;
+    }
+
+    svg {
+      width: 12em;
+      height: 12em;
+    }
+
+    @media screen and (max-width: 767px) {
+      h1 {
+        font-size: 8rem;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      h1 {
+        font-size: 7.2rem;
+      }
+      svg {
+        width: 10em;
+        height: 10em;
+      }
+    }
+
+    @media screen and (max-width: 398px) {
+      h1 {
+        font-size: 5.4rem;
+      }
+    }
+
+    @media screen and (max-width: 341px) {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+}

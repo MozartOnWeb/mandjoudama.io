@@ -6,11 +6,9 @@ import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
 
 export default function Services() {
   return (
-    <main className="services">
+    <main className="services-page">
       <section className="services-hero">
-        <h1>
-          We create your <br /> brand together.
-        </h1>
+        <h1>Let&apos;s bring your brand to the next level.</h1>
 
         <div className="hero-tags-links">
           <OnPageLink
