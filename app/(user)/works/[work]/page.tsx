@@ -4,6 +4,7 @@ import {
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
+import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
 
 export default function Work() {
   return (
@@ -50,6 +51,12 @@ export default function Work() {
           </div>
         </div>
       </section>
+
+      {/* SEPARATOR */}
+      <SectionSeparator />
+
+      {/* LETS TALK SECTION */}
+      <LetsTalkSection />
 
       {/* SEPARATOR */}
       <SectionSeparator />
