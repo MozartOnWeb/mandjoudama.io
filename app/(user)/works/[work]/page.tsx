@@ -1,4 +1,7 @@
-import { VerticalSeparator } from "@/components/separators/Separators";
+import {
+  SectionSeparator,
+  VerticalSeparator,
+} from "@/components/separators/Separators";
 
 export default function Work() {
   return (
@@ -20,31 +23,34 @@ export default function Work() {
 
         <div className="right">
           <div className="work-detail">
-            <p>Client</p>
+            <p className="title">Client</p>
             <p>Tiecoura N&apos;Daou</p>
           </div>
           <div className="work-detail">
-            <p>Year</p>
+            <p className="title">Year</p>
             <p>2021</p>
           </div>
           <div className="work-detail">
-            <p>TIMELINE</p>
+            <p className="title">TIMELINE</p>
             <p>8 weeks</p>
           </div>
           <div className="work-detail">
-            <p>Services</p>
-            <div className="work-detail-services">
+            <p className="title">Services</p>
+            <div className="work-details-services">
               <p>Web dev</p>
               <p>web design</p>
               <p>content</p>
             </div>
           </div>
           <div className="work-detail">
-            <p>Website</p>
+            <p className="title">Website</p>
             <p>tiecourandaou.com</p>
           </div>
         </div>
       </section>
+
+      {/* SEPARATOR */}
+      <SectionSeparator />
     </main>
   );
 }

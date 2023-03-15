@@ -1,0 +1,53 @@
+.single-work-page {
+  .hero {
+    min-height: 35vh;
+    display: grid;
+    grid-template-columns: 1fr 1px 0.4fr;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      h1 {
+        font-family: $fav-font;
+        font-size: 10rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-family: $body-font;
+        font-weight: 300;
+        font-size: 2.6rem;
+        line-height: 1.2em;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .work-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        p {
+          font-family: $heading-font;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+        }
+      }
+
+      .work-detail .title {
+        opacity: 0.3;
+      }
+
+      .work-details-services {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+      }
+    }
+  }
+}
