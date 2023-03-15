@@ -28,7 +28,7 @@ const routes = [
 export default function Hamburger() {
   let pathname = usePathname() || "/";
   if (pathname.includes("/works/")) {
-    pathname = "/work";
+    pathname = "/works";
   }
 
   if (pathname.includes("/blogs/")) {
