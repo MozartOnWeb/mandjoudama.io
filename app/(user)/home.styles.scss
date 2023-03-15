@@ -114,6 +114,7 @@
     font-family: $body-font;
     color: $black;
     font-size: 1.6rem;
+    letter-spacing: 1px;
     font-weight: 400;
     text-transform: uppercase;
   }
@@ -185,6 +186,7 @@
     font-family: $body-font;
     color: $black;
     font-size: 1.6rem;
+    letter-spacing: 1px;
     font-weight: 400;
     text-transform: uppercase;
   }
@@ -346,7 +348,9 @@
     border-radius: 10px;
   }
 
-  .left-container {
+  .left-inner-container {
+    position: sticky;
+    top: 2rem;
     h2 {
       font-family: $body-font;
       color: $black;
@@ -526,6 +530,7 @@
       font-family: $body-font;
       color: $black;
       font-size: 1.6rem;
+      letter-spacing: 1px;
       font-weight: 400;
       text-transform: uppercase;
       margin-bottom: 3em;
@@ -854,6 +859,7 @@
     text-decoration: none;
     color: $black;
     font-size: 1.6rem;
+    letter-spacing: 1px;
     font-weight: 400;
     text-transform: uppercase;
   }

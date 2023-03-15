@@ -143,29 +143,31 @@ export default function Home() {
       {/* FEATURED WORK */}
       <section className="featured-work">
         <div className="left-container">
-          <h2>
-            Featured <br /> Work
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
-          </p>
-          <AnimatedButton
-            letters={[
-              "s",
-              "e",
-              "e",
-              "\u00a0",
-              "a",
-              "l",
-              "l",
-              "\u00a0",
-              "w",
-              "o",
-              "r",
-              "k",
-            ]}
-          />
+          <div className="left-inner-container">
+            <h2>
+              Featured <br /> Work
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
+            <AnimatedButton
+              letters={[
+                "s",
+                "e",
+                "e",
+                "\u00a0",
+                "a",
+                "l",
+                "l",
+                "\u00a0",
+                "w",
+                "o",
+                "r",
+                "k",
+              ]}
+            />
+          </div>
         </div>
 
         <span className="featured-horizontal-bar" />
