@@ -45,6 +45,8 @@ export default function Blogs() {
 
       {/* SEPARATOR */}
       <SectionSeparator />
+
+      <section className="blogs-list"></section>
     </main>
   );
 }
