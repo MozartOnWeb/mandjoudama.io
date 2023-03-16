@@ -18,6 +18,7 @@ import {
 } from "@/public/assets/icons";
 
 import Image1 from "../../public/assets/images/1.jpg";
+import { LittleBlog } from "@/components/blogs/LittleBlog";
 
 export default function Home() {
   return (
@@ -367,51 +368,11 @@ export default function Home() {
         <span className="home-latest-headline-separator" />
 
         <div className="posts-container">
-          <div className="single-post">
-            <Link href={""}>
-              <Image className="post-image" src={Image1} alt="post-image" />
-            </Link>
-
-            <Link className="category" href={""}>
-              Branding
-            </Link>
-
-            <Link className="description" href={""}>
-              Things to Look for When Comparing Branding Alternatives.
-            </Link>
-          </div>
-
+          <LittleBlog />
           <span className="post-separator" />
-
-          <div className="single-post">
-            <Link href={""}>
-              <Image className="post-image" src={Image1} alt="post-image" />
-            </Link>
-
-            <Link className="category" href={""}>
-              Branding
-            </Link>
-
-            <Link className="description" href={""}>
-              Things to Look for When Comparing Branding Alternatives.
-            </Link>
-          </div>
-
+          <LittleBlog />
           <span className="post-separator" />
-
-          <div className="single-post">
-            <Link href={""}>
-              <Image className="post-image" src={Image1} alt="post-image" />
-            </Link>
-
-            <Link className="category" href={""}>
-              Branding
-            </Link>
-
-            <Link className="description" href={""}>
-              Things to Look for When Comparing Branding Alternatives.
-            </Link>
-          </div>
+          <LittleBlog />
         </div>
       </section>
 

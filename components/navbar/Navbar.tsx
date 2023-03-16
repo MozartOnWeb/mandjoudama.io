@@ -85,6 +85,7 @@ export default function Navbar() {
           ))}
 
           <AnimatedButton
+            href="/contact"
             letters={[
               "l",
               "e",
