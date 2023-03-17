@@ -3,18 +3,20 @@ import Image from "next/image";
 
 import Image1 from "../../public/assets/images/1.jpg";
 
-export const LittleBlog = () => {
+type Props = {
+  href?: string;
+};
+
+export const LittleBlog = ({ href }: Props) => {
   return (
     <div className="little-blog">
-      <Link href={""}>
+      <Link href={href ? href : ""}>
         <Image className="post-image" src={Image1} alt="post-image" />
       </Link>
 
-      <Link className="category" href={""}>
-        Branding
-      </Link>
+      <p className="category">Branding</p>
 
-      <Link className="description" href={""}>
+      <Link className="description" href={href ? href : ""}>
         Things to Look for When Comparing Branding Alternatives.
       </Link>
     </div>

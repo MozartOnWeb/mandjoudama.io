@@ -48,11 +48,11 @@ export default function Blogs() {
 
       <section className="blogs-page-latest-blog">
         <div className="left">
-          <Link href={""}>
+          <Link href="/blogs/blog">
             <Image src={Image4} alt="fdf" />
           </Link>
           <p className="category">Web dev</p>
-          <Link className="description" href={""}>
+          <Link className="description" href="/blogs/blog">
             Things to Look for When Comparing Branding Alternatives
           </Link>
         </div>
@@ -60,11 +60,11 @@ export default function Blogs() {
         <VerticalSeparator />
 
         <div className="left">
-          <Link href={""}>
+          <Link href="/blogs/blog">
             <Image src={Image4} alt="fdf" />
           </Link>
           <p className="category">Web dev</p>
-          <Link className="description" href={""}>
+          <Link className="description" href="/blogs/blog">
             Things to Look for When Comparing Branding Alternatives
           </Link>
         </div>
@@ -75,7 +75,7 @@ export default function Blogs() {
 
       <section className="blogs-list">
         {blogs.map((blog) => (
-          <LittleBlog key={blog.id} />
+          <LittleBlog href="/blogs/blog" key={blog.id} />
         ))}
       </section>
 

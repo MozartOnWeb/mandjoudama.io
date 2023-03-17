@@ -1,6 +1,7 @@
 import { SingleWorkSection } from "@/sections/work/SingleWorkSection";
 import { SectionSeparator } from "@/components/separators/Separators";
 import { BrandingIcon } from "@/public/assets/icons";
+import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
 
 export default function Work() {
   return (
@@ -21,6 +22,11 @@ export default function Work() {
         <SectionSeparator />
 
         <SingleWorkSection />
+
+        {/* SEPARATOR */}
+        <SectionSeparator />
+
+        <LetsTalkSection />
 
         {/* SEPARATOR */}
         <SectionSeparator />
