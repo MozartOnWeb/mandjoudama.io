@@ -9,6 +9,7 @@ import {
 } from "@/components/separators/Separators";
 
 import Image4 from "../../../public/assets/images/1.jpg";
+import { NewsLetter } from "@/components/blogs/NewsLetter";
 
 const blogs = [
   {
@@ -77,6 +78,11 @@ export default function Blogs() {
           <LittleBlog key={blog.id} />
         ))}
       </section>
+
+      {/* SEPARATOR */}
+      <SectionSeparator />
+
+      <NewsLetter />
 
       {/* SEPARATOR */}
       <SectionSeparator />
