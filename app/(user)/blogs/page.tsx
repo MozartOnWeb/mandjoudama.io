@@ -1,12 +1,38 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import { LittleBlog } from "@/components/blogs/LittleBlog";
+
 import {
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
 
 import Image4 from "../../../public/assets/images/1.jpg";
+
+const blogs = [
+  {
+    id: 1,
+  },
+  {
+    id: 2,
+  },
+  {
+    id: 3,
+  },
+  {
+    id: 4,
+  },
+  {
+    id: 5,
+  },
+  {
+    id: 6,
+  },
+  {
+    id: 7,
+  },
+];
 
 export default function Blogs() {
   return (
@@ -46,7 +72,14 @@ export default function Blogs() {
       {/* SEPARATOR */}
       <SectionSeparator />
 
-      <section className="blogs-list"></section>
+      <section className="blogs-list">
+        {blogs.map((blog) => (
+          <LittleBlog key={blog.id} />
+        ))}
+      </section>
+
+      {/* SEPARATOR */}
+      <SectionSeparator />
     </main>
   );
 }
