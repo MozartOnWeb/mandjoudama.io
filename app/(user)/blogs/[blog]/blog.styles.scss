@@ -1,0 +1,113 @@
+.single-blog-page {
+  .single-blog-page-hero {
+    min-height: 55vh;
+    display: grid;
+    grid-template-columns: 0.33fr 1fr 1px 0.33fr;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 5em;
+
+    .infos-container {
+      display: flex;
+      flex-direction: column;
+
+      gap: 2em;
+
+      h1 {
+        font-family: $fav-font;
+        font-size: 8rem;
+      }
+
+      p {
+        font-family: $body-font;
+        font-weight: 300;
+        font-size: 2.4rem;
+        line-height: 1.2em;
+      }
+    }
+
+    .blog-details-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5em;
+
+      .work-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        p {
+          font-family: $body-font;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+        }
+      }
+
+      .work-detail .title {
+        opacity: 0.3;
+        font-size: 1.7rem;
+      }
+
+      .work-details-services {
+        display: flex;
+        align-items: center;
+        gap: 1em 2em;
+        flex-wrap: wrap;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      grid-row-gap: 5rem;
+      grid-template-columns: 1fr 1px 0.33fr;
+      grid-template-areas:
+        "button button button"
+        "content separator details";
+
+      a {
+        grid-area: button;
+      }
+
+      .vertical-separator {
+        grid-area: separator;
+      }
+
+      .infos-container {
+        grid-area: content;
+
+        h1 {
+          font-size: 6rem;
+        }
+
+        p {
+          font-size: 2.2rem;
+        }
+      }
+
+      .blog-details-container {
+        grid-area: details;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      gap: 4em;
+
+      .vertical-separator {
+        width: 100%;
+        height: 1px;
+      }
+    }
+
+    @media screen and (max-width: 472px) {
+      .infos-container {
+        h1 {
+          font-size: 4rem;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -12,7 +12,7 @@ export const NewsLetter = () => {
         <HowWeWorkIcon />
 
         <form method="post">
-          <input placeholder="Your Email" type="text" />
+          <input placeholder="Your Email" type="email" />
           <button type="submit">Subscribe</button>
         </form>
       </div>

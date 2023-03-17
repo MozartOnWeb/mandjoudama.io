@@ -15,6 +15,7 @@ import {
   HowWeWorkIcon,
   LogoSvg,
   WebDevIcon,
+  WorkSolutionIcon,
 } from "@/public/assets/icons";
 
 import Image1 from "../../public/assets/images/1.jpg";
