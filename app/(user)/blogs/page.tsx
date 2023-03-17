@@ -9,7 +9,7 @@ import {
 } from "@/components/separators/Separators";
 
 import Image4 from "../../../public/assets/images/1.jpg";
-import { NewsLetter } from "@/components/blogs/NewsLetter";
+import { NewsLetter } from "@/sections/blogs/NewsLetter";
 
 const blogs = [
   {
