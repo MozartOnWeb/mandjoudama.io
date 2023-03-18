@@ -154,6 +154,7 @@ export default function Home() {
               eiusmod tempor.
             </p>
             <AnimatedButton
+              href="/works"
               letters={[
                 "s",
                 "e",
@@ -253,6 +254,7 @@ export default function Home() {
           </p>
 
           <AnimatedButton
+            href="/services"
             letters={[
               "m",
               "y",
@@ -361,6 +363,7 @@ export default function Home() {
         <div className="latest-posts-headline">
           <h2>Latest Posts</h2>
           <AnimatedButton
+            href="/blogs"
             style="outline"
             letters={["v", "i", "e", "w", "\u00a0", "a", "l", "l"]}
           />
