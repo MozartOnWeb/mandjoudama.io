@@ -15,9 +15,11 @@ import {
   HowWeWorkIcon,
   LogoSvg,
   WebDevIcon,
+  WorkSolutionIcon,
 } from "@/public/assets/icons";
 
 import Image1 from "../../public/assets/images/1.jpg";
+import { LittleBlog } from "@/components/blogs/LittleBlog";
 
 export default function Home() {
   return (
@@ -152,6 +154,7 @@ export default function Home() {
               eiusmod tempor.
             </p>
             <AnimatedButton
+              href="/works"
               letters={[
                 "s",
                 "e",
@@ -251,6 +254,7 @@ export default function Home() {
           </p>
 
           <AnimatedButton
+            href="/services"
             letters={[
               "m",
               "y",
@@ -359,6 +363,7 @@ export default function Home() {
         <div className="latest-posts-headline">
           <h2>Latest Posts</h2>
           <AnimatedButton
+            href="/blogs"
             style="outline"
             letters={["v", "i", "e", "w", "\u00a0", "a", "l", "l"]}
           />
@@ -367,51 +372,11 @@ export default function Home() {
         <span className="home-latest-headline-separator" />
 
         <div className="posts-container">
-          <div className="single-post">
-            <Link href={""}>
-              <Image className="post-image" src={Image1} alt="post-image" />
-            </Link>
-
-            <Link className="category" href={""}>
-              Branding
-            </Link>
-
-            <Link className="description" href={""}>
-              Things to Look for When Comparing Branding Alternatives.
-            </Link>
-          </div>
-
+          <LittleBlog />
           <span className="post-separator" />
-
-          <div className="single-post">
-            <Link href={""}>
-              <Image className="post-image" src={Image1} alt="post-image" />
-            </Link>
-
-            <Link className="category" href={""}>
-              Branding
-            </Link>
-
-            <Link className="description" href={""}>
-              Things to Look for When Comparing Branding Alternatives.
-            </Link>
-          </div>
-
+          <LittleBlog />
           <span className="post-separator" />
-
-          <div className="single-post">
-            <Link href={""}>
-              <Image className="post-image" src={Image1} alt="post-image" />
-            </Link>
-
-            <Link className="category" href={""}>
-              Branding
-            </Link>
-
-            <Link className="description" href={""}>
-              Things to Look for When Comparing Branding Alternatives.
-            </Link>
-          </div>
+          <LittleBlog />
         </div>
       </section>
 

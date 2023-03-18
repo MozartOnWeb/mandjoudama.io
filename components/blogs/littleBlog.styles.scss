@@ -1,0 +1,52 @@
+.little-blog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+  .post-image {
+    width: 100%;
+    height: 15vw;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .category {
+    font-family: $body-font;
+    text-decoration: none;
+    color: $black;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .description {
+    color: $black;
+    font-family: $body-font;
+    font-size: 2.4rem;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 890px) {
+    .post-image {
+      height: 23vw;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    gap: 1.4em;
+
+    .post-image {
+      height: 45vw;
+    }
+
+    .description {
+      font-size: 2.4rem;
+    }
+
+    .post-separator {
+      height: 1px;
+      width: 100%;
+    }
+  }
+}

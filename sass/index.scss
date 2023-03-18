@@ -13,14 +13,19 @@
 @import "../components/hamburger/hamburger.styles.scss";
 @import "../components/buttons/buttons.styles.scss";
 @import "../components/separators/separators.styles.scss";
+@import "../components/blogs/littleBlog.styles.scss";
 
 /* Import pages styles */
 @import "../app/(user)/home.styles.scss";
 @import "../app/(user)/services/services.styles.scss";
 @import "../app/(user)/works/works.styles.scss";
 @import "../app/(user)/works/[work]/work.style.scss";
+@import "../app/(user)/blogs/blogs.styles.scss";
+@import "../app/(user)/blogs/[blog]/blog.styles.scss";
+@import "../app/(user)/contact/contact.styles.scss";
 
 /* Import sections styles */
 @import "../sections/services/SingleService.styles.scss";
 @import "../sections/contact/letsTalkSection.styles.scss";
 @import "../sections/work/singleWorkSection.styles.scss";
+@import "../sections/blogs/newsletter.styles.scss";
