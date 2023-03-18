@@ -35,22 +35,15 @@ const faqs = [
 ];
 
 export default function Contact() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<string | null>(null);
 
   const variants = {
     open: { rotate: 45 },
     closed: { rotate: 0 },
   };
 
-  const variants2 = {
-    open: { display: "block", y: 0, opacity: 1 },
-    closed: { display: "none", y: -20, opacity: 0 },
-  };
-
   const handleAnimate = (blogId: string) => {
-    if (blogId) {
-      setIsOpen((isOpen) => !isOpen);
-    }
+    setIsOpen(isOpen === blogId ? null : blogId);
   };
 
   return (
@@ -94,50 +87,53 @@ export default function Contact() {
 
         <div className="right">
           {faqs.map((faq, index) => (
-            <AnimatePresence key={index}>
-              <motion.div className="faq-container">
-                <div
-                  onClick={() => handleAnimate(faq.question)}
-                  className="question"
-                >
-                  <h6>{faq.question}</h6>
-                  <div className="svg-container">
-                    <motion.svg
-                      animate={isOpen ? "open" : "closed"}
-                      variants={variants}
-                      width="86"
-                      height="86"
-                      viewBox="0 0 86 86"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 43H85"
-                        stroke="#ffffff"
-                        strokeWidth="10"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M43 85V1"
-                        stroke="#ffffff"
-                        strokeWidth="10"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </motion.svg>
-                  </div>
+            <motion.div key={index} className="faq-container">
+              <motion.div
+                onClick={() => handleAnimate(faq.question)}
+                className="question"
+              >
+                <h6>{faq.question}</h6>
+                <div className="svg-container">
+                  <motion.svg
+                    animate={isOpen === faq.question ? "open" : "closed"}
+                    variants={variants}
+                    width="86"
+                    height="86"
+                    viewBox="0 0 86 86"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 43H85"
+                      stroke="#ffffff"
+                      strokeWidth="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M43 85V1"
+                      stroke="#ffffff"
+                      strokeWidth="10"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </motion.svg>
                 </div>
-
-                <motion.p
-                  animate={isOpen ? "open" : "closed"}
-                  variants={variants2}
-                  className="response"
-                >
-                  {faq.response}
-                </motion.p>
               </motion.div>
-            </AnimatePresence>
+
+              <AnimatePresence>
+                {isOpen === faq.question && (
+                  <motion.div
+                    className="response-container"
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                  >
+                    <p className="response-paragraph">{faq.response}</p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
           ))}
         </div>
       </section>
