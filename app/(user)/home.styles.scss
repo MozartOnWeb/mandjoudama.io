@@ -104,12 +104,10 @@
 // OUR CLIENTS SECTION
 // OUR CLIENTS SECTION
 .our-client-container {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 0.4fr 1px 1fr;
   gap: 5em;
-  padding: 2em 0em;
-  width: 100%;
-  justify-content: space-between;
+  align-items: center;
 
   h2 {
     font-family: $body-font;
@@ -127,10 +125,8 @@
   }
 
   .clients-logo-container {
-    width: 70%;
-    gap: 5em;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     svg {
@@ -148,6 +144,7 @@
     .clients-logo-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 5em;
 
       svg {
         width: 7em;
@@ -158,8 +155,8 @@
   }
 
   @media screen and (max-width: 777px) {
+    display: flex;
     flex-direction: column;
-    padding: 1.5em 0em;
 
     .vertical-bar {
       display: none;
@@ -175,13 +172,8 @@
 // WHAT WE DO SECTION
 .what-we-do-container {
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 4rem;
-  grid-row-gap: 4rem;
-  -ms-grid-columns: 0.6fr 1px 1fr;
   grid-template-columns: 0.6fr 1px 1.5fr;
-  -ms-grid-rows: auto;
-  grid-template-rows: auto;
+  gap: 4em;
   padding: 3em 0em;
   h2 {
     font-family: $body-font;
@@ -192,17 +184,9 @@
     text-transform: uppercase;
   }
 
-  .vertical-bar {
-    width: 1px;
-    height: 100%;
-    background-color: $black;
-  }
-
   .services-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 7em;
   }
 
   .services-row {
@@ -210,9 +194,7 @@
     grid-auto-columns: 1fr;
     grid-column-gap: 4rem;
     grid-row-gap: 4rem;
-    -ms-grid-columns: 1fr 1px 1fr;
     grid-template-columns: 1fr 1px 1fr;
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
   }
 
@@ -220,8 +202,7 @@
     display: flex;
     align-items: flex-start;
     gap: 2.5em;
-    padding: 2em 1em;
-
+    padding: 1em 1em;
     svg {
       width: 7em;
       height: 7em;

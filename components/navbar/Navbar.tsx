@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { motion } from "framer-motion";
+
 import { useHamburger } from "@/stores/useHamburger";
 
 import { LogoSvg } from "@/public/assets/icons";
@@ -129,7 +131,13 @@ export default function Navbar() {
         </svg>
       </div>
 
-      <div className="horizontal-bar" />
+      <motion.div
+        initial={{ width: "0%", left: "0%" }}
+        whileInView={{ width: "100%" }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="horizontal-bar"
+      />
       <AnimatePresence>{isOpened && <Hamburger />}</AnimatePresence>
     </nav>
   );

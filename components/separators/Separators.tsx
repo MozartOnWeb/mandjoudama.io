@@ -1,22 +1,16 @@
 "use client";
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 export const SectionSeparator = () => {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end end", "start start"],
-  });
-
-  const width = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const scrollRef = useRef(null);
 
   return (
     <motion.span
       initial={{ width: "0%", left: "0%" }}
       whileInView={{ width: "100%" }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true, margin: "50% 0px 0px 0px" }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 1 }}
       className="section-separator"
     />
   );
@@ -27,8 +21,8 @@ export const VerticalSeparator = () => {
     <motion.span
       initial={{ height: "0%", top: "0%" }}
       whileInView={{ height: "100%" }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true, margin: "200px 0px 0px 0px" }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 1 }}
       className="vertical-separator"
     />
   );

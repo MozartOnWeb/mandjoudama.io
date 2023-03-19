@@ -6,6 +6,10 @@ import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
 
 //import components
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
+import {
+  SectionSeparator,
+  VerticalSeparator,
+} from "@/components/separators/Separators";
 
 import {
   BrandingIcon,
@@ -15,7 +19,6 @@ import {
   HowWeWorkIcon,
   LogoSvg,
   WebDevIcon,
-  WorkSolutionIcon,
 } from "@/public/assets/icons";
 
 import Image1 from "../../public/assets/images/1.jpg";
@@ -56,7 +59,7 @@ export default function Home() {
       </section>
 
       {/* SEPARATOR */}
-      <span className="horizontal-bar" />
+      <SectionSeparator />
 
       {/* OUR CLIENT SECTION */}
       <section className="our-client-container">
@@ -73,12 +76,12 @@ export default function Home() {
       </section>
 
       {/* SEPARATOR */}
-      <span className="horizontal-bar" />
+      <SectionSeparator />
 
       {/* WHAT WE DO SECTION */}
       <section className="what-we-do-container">
         <h2>What We Do</h2>
-        <span className="vertical-bar" />
+        <VerticalSeparator />
 
         <div className="services-container">
           {/* first row */}
@@ -94,7 +97,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <span className="service-vertical-bar" />
+            <VerticalSeparator />
             <div className="service">
               <DesignIcon />
               <div className="service-infos">
@@ -108,7 +111,7 @@ export default function Home() {
             </div>
           </div>
 
-          <span className="service-horizontal-bar" />
+          <SectionSeparator />
 
           {/* second row */}
           <div className="services-row">
@@ -123,7 +126,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <span className="service-vertical-bar" />
+            <VerticalSeparator />
             <div className="service">
               <ContentIcon />
               <div className="service-infos">
@@ -140,7 +143,7 @@ export default function Home() {
       </section>
 
       {/* SEPARATOR */}
-      <span className="horizontal-bar" />
+      <SectionSeparator />
 
       {/* FEATURED WORK */}
       <section className="featured-work">
@@ -231,7 +234,7 @@ export default function Home() {
       </section>
 
       {/* SEPARATOR */}
-      <span className="horizontal-bar" />
+      <SectionSeparator />
 
       {/* HOW WE WORK */}
       <section className="how-we-work">
@@ -273,7 +276,7 @@ export default function Home() {
       </section>
 
       {/* SEPARATOR */}
-      <span className="horizontal-bar" />
+      <SectionSeparator />
 
       {/* OUR VALUES SECTION */}
       <section className="our-values-container">
@@ -350,13 +353,13 @@ export default function Home() {
       </section>
 
       {/* SEPARATOR */}
-      <span className="horizontal-bar" />
+      <SectionSeparator />
 
       {/* HOME CONTACT */}
       <LetsTalkSection />
 
       {/* SEPARATOR */}
-      <span className="horizontal-bar" />
+      <SectionSeparator />
 
       {/* LATEST POSTS */}
       <section className="home-latest-posts">
@@ -381,7 +384,7 @@ export default function Home() {
       </section>
 
       {/* SEPARATOR */}
-      <span className="horizontal-bar" />
+      <SectionSeparator />
     </main>
   );
 }
