@@ -1,4 +1,8 @@
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
+import {
+  SectionSeparator,
+  VerticalSeparator,
+} from "@/components/separators/Separators";
 
 import { HomeContactIcon } from "@/public/assets/icons";
 
@@ -14,7 +18,8 @@ export const LetsTalkSection = () => {
         <HomeContactIcon />
       </div>
 
-      <span className="home-contact-separator" />
+      <SectionSeparator />
+      <VerticalSeparator />
 
       <div className="right">
         <p>

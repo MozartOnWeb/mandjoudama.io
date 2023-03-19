@@ -4,6 +4,10 @@
   grid-template-columns: 1fr 1px 0.4fr;
   gap: 5em;
 
+  .section-separator {
+    display: none;
+  }
+
   .left {
     display: flex;
     flex-direction: column;
@@ -26,7 +30,7 @@
       letter-spacing: 1px;
       font-weight: 400;
       text-transform: uppercase;
-      margin-bottom: 3em;
+      margin-bottom: 1em;
     }
 
     h5 {
@@ -35,13 +39,6 @@
       font-size: 7rem;
       font-weight: 400;
     }
-  }
-
-  .home-contact-separator {
-    height: 100%;
-    width: 100%;
-    background-color: $black;
-    display: block;
   }
 
   .right {
@@ -85,11 +82,15 @@
       }
     }
 
-    .home-contact-separator {
+    .section-separator {
+      display: block;
+      margin: 0em;
       grid-area: center;
-      height: 1px;
-      width: 100%;
-      margin: 0;
+    }
+
+    .vertical-separator {
+      display: none;
+      grid-area: center;
     }
 
     .right {

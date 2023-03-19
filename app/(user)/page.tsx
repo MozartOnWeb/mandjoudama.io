@@ -98,6 +98,7 @@ export default function Home() {
               </div>
             </div>
             <VerticalSeparator />
+            <SectionSeparator />
             <div className="service">
               <DesignIcon />
               <div className="service-infos">
@@ -127,6 +128,7 @@ export default function Home() {
               </div>
             </div>
             <VerticalSeparator />
+            <SectionSeparator />
             <div className="service">
               <ContentIcon />
               <div className="service-infos">
@@ -176,7 +178,7 @@ export default function Home() {
           </div>
         </div>
 
-        <span className="featured-horizontal-bar" />
+        <VerticalSeparator />
 
         <div className="right-container">
           <Link href={""} className="top-project-container">
@@ -187,7 +189,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <span className="right-container-horizontal-bar" />
+          <SectionSeparator />
 
           <div className="bottom-projects-container">
             <div className="bottom-projects-row">
@@ -199,7 +201,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              <span className="bottom-projects-row-bar" />
+              <VerticalSeparator />
 
               <Link href={""} className="single-project-container">
                 <Image src={Image1} alt="" />
@@ -219,7 +221,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              <span className="bottom-projects-row-bar" />
+              <VerticalSeparator />
 
               <Link href={""} className="single-project-container">
                 <Image src={Image1} alt="" />
@@ -247,7 +249,8 @@ export default function Home() {
           <HowWeWorkIcon />
         </div>
 
-        <span className="how-we-work-vertical" />
+        <VerticalSeparator />
+        <SectionSeparator />
 
         <div className="right">
           <p>
@@ -282,7 +285,7 @@ export default function Home() {
       <section className="our-values-container">
         <h2 className="our-values-headline">Our values</h2>
 
-        <span className="values-headline-separator" />
+        <SectionSeparator />
 
         <div className="values-bottom-container">
           <div className="left">
@@ -299,7 +302,7 @@ export default function Home() {
             ></video>
           </div>
 
-          <span className="values-bottom-separator" />
+          <VerticalSeparator />
 
           <div className="right">
             {/* RIGHT ITEMS */}
@@ -317,7 +320,7 @@ export default function Home() {
               </div>
             </div>
 
-            <span className="right-item-separator" />
+            <SectionSeparator />
 
             <div className="right-item">
               <p className="number">02</p>
@@ -332,7 +335,7 @@ export default function Home() {
               </div>
             </div>
 
-            <span className="right-item-separator" />
+            <SectionSeparator />
 
             <div className="right-item">
               <p className="number">03</p>
@@ -372,13 +375,15 @@ export default function Home() {
           />
         </div>
 
-        <span className="home-latest-headline-separator" />
+        <SectionSeparator />
 
         <div className="posts-container">
           <LittleBlog />
-          <span className="post-separator" />
+          <SectionSeparator />
+          <VerticalSeparator />
           <LittleBlog />
-          <span className="post-separator" />
+          <SectionSeparator />
+          <VerticalSeparator />
           <LittleBlog />
         </div>
       </section>

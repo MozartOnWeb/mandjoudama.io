@@ -1,10 +1,8 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useLayoutEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export const SectionSeparator = () => {
-  const scrollRef = useRef(null);
-
   return (
     <motion.span
       initial={{ width: "0%", left: "0%" }}

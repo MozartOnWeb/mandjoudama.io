@@ -196,6 +196,10 @@
     grid-row-gap: 4rem;
     grid-template-columns: 1fr 1px 1fr;
     grid-template-rows: auto;
+
+    .section-separator {
+      display: none;
+    }
   }
 
   .service {
@@ -250,16 +254,25 @@
 
     .services-container {
       gap: 4em;
+
+      .section-separator {
+        display: block;
+        margin: 0em;
+      }
     }
 
     .services-row {
       display: flex;
       flex-direction: column;
-    }
 
-    .service-vertical-bar {
-      height: 1px;
-      width: 100%;
+      .section-separator {
+        display: block;
+        margin: 0em;
+      }
+
+      .vertical-separator {
+        display: none;
+      }
     }
 
     .service-infos {
@@ -274,7 +287,7 @@
     display: flex;
     padding: 1.5em 0em;
     flex-direction: column;
-    .vertical-bar {
+    .vertical-separator {
       display: none;
     }
   }
@@ -391,12 +404,8 @@
     }
   }
 
-  .right-container-horizontal-bar {
-    background-color: $black;
-    width: 100%;
-    height: 1px;
-    display: block;
-    margin: 3em auto;
+  .right-container .section-separator {
+    margin: 3em 0em;
   }
 
   .bottom-projects-container {
@@ -411,13 +420,6 @@
     display: grid;
     gap: 5em;
     grid-template-columns: 1fr 1px 1fr;
-  }
-
-  .bottom-projects-row-bar {
-    background-color: $black;
-    width: 1px;
-    height: 100%;
-    display: block;
   }
 
   .single-project-container {
@@ -435,10 +437,10 @@
       flex-direction: column;
       gap: 5em 0em;
     }
-    .right-container-horizontal-bar {
+    .right-container .section-separator {
       display: none;
     }
-    .bottom-projects-row-bar {
+    .vertical-separator {
       display: none;
     }
     .bottom-projects-row {
@@ -531,10 +533,8 @@
     }
   }
 
-  .how-we-work-vertical {
-    background-color: $black;
-    height: 100%;
-    width: 1px;
+  .section-separator {
+    display: none;
   }
 
   .right {
@@ -578,11 +578,14 @@
       }
     }
 
-    .how-we-work-vertical {
+    .section-separator {
       grid-area: center;
-      height: 1px;
-      width: 100%;
+      display: block;
       margin: 0;
+    }
+
+    .vertical-separator {
+      display: none;
     }
 
     .right {
@@ -619,12 +622,8 @@
     text-align: center;
   }
 
-  .values-headline-separator {
-    height: 1px;
-    width: 100%;
-    background-color: $black;
+  .section-separator {
     margin: 3em 0em 6em 0em;
-    display: block;
   }
 
   .values-bottom-container {
@@ -646,16 +645,14 @@
     }
   }
 
-  .values-bottom-separator {
-    background-color: $black;
-    height: 100%;
-    width: 1px;
-  }
-
   .right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    .section-separator {
+      margin: 0em;
+    }
   }
 
   .right-item {
@@ -714,7 +711,7 @@
       height: 60vh;
     }
 
-    .values-bottom-separator {
+    .vertical-separator {
       display: none;
     }
 
@@ -807,12 +804,8 @@
     }
   }
 
-  .home-latest-headline-separator {
-    height: 1px;
-    width: 100%;
-    background-color: $black;
+  .section-separator {
     margin: 3em 0em 6em 0em;
-    display: block;
   }
 
   .posts-container {
@@ -820,17 +813,14 @@
     width: 100%;
     grid-template-columns: 1fr 1px 1fr 1px 1fr;
     gap: 5em;
-  }
 
-  .post-separator {
-    height: 100%;
-    width: 1px;
-    background-color: $black;
-    display: block;
+    .section-separator {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 890px) {
-    .posts-container :nth-child(n + 4) {
+    .posts-container :nth-child(n + 5) {
       display: none;
     }
 
@@ -858,21 +848,25 @@
       }
     }
 
-    .posts-container :nth-child(n + 4) {
+    .posts-container :nth-child(n + 5) {
       display: block;
     }
 
     .posts-container {
       grid-template-columns: none;
+
+      .section-separator {
+        display: block;
+        margin: 0;
+      }
+
+      .vertical-separator {
+        display: none;
+      }
     }
 
-    .little-blog:nth-child(5) {
+    .little-blog:nth-child(7) {
       display: flex;
-    }
-
-    .post-separator {
-      height: 1px;
-      width: 100%;
     }
   }
 }
