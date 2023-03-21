@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
+  HorizontalSeparator,
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
@@ -52,7 +53,7 @@ export const FeaturedWork = () => {
           </div>
         </Link>
 
-        <SectionSeparator />
+        <HorizontalSeparator />
 
         <div className="bottom-projects-container">
           <div className="bottom-projects-row">

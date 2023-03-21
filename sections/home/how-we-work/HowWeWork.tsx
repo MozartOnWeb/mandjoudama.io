@@ -1,5 +1,6 @@
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
+  HorizontalSeparator,
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
@@ -18,7 +19,7 @@ export const HowWeWork = () => {
       </div>
 
       <VerticalSeparator />
-      <SectionSeparator />
+      <HorizontalSeparator />
 
       <div className="right">
         <p>

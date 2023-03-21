@@ -1,9 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
-
-//import section
+//import sections
 import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
-
 import {
   FeaturedWork,
   Hero,
@@ -14,17 +10,7 @@ import {
   WhatWeDo,
 } from "@/sections/home";
 
-//import components
-import { AnimatedButton } from "@/components/buttons/AnimatedButton";
-import {
-  SectionSeparator,
-  VerticalSeparator,
-} from "@/components/separators/Separators";
-
-import { HowWeWorkIcon } from "@/public/assets/icons";
-
-import Image1 from "../../public/assets/images/1.jpg";
-import { LittleBlog } from "@/components/blogs/LittleBlog";
+import { SectionSeparator } from "@/components/separators/Separators";
 
 export default function Home() {
   return (

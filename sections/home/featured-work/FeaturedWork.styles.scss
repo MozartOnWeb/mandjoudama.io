@@ -78,7 +78,7 @@
     }
   }
 
-  .right-container .section-separator {
+  .right-container .horizontal-separator {
     margin: 3em 0em;
   }
 
@@ -111,10 +111,10 @@
       flex-direction: column;
       gap: 5em 0em;
     }
-    .right-container .section-separator {
+    .right-container .horizontal-separator {
       display: none;
     }
-    .vertical-separator {
+    .right-container .vertical-separator {
       display: none;
     }
     .bottom-projects-row {

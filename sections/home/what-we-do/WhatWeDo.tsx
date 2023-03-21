@@ -46,7 +46,7 @@ export const WhatWeDo = () => {
           </div>
         </div>
 
-        <SectionSeparator />
+        <HorizontalSeparator type="with-margin" />
 
         {/* second row */}
         <div className="services-row">
