@@ -3,10 +3,13 @@ import Image from "next/image";
 
 //import section
 import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
+import { Hero } from "@/sections/home/hero/Hero";
+import { OurClients } from "@/sections/home/our-clients/OurClients";
 
 //import components
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
+  HorizontalSeparator,
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
@@ -15,7 +18,6 @@ import {
   BrandingIcon,
   ContentIcon,
   DesignIcon,
-  HeroIcon,
   HowWeWorkIcon,
   LogoSvg,
   WebDevIcon,
@@ -27,53 +29,12 @@ import { LittleBlog } from "@/components/blogs/LittleBlog";
 export default function Home() {
   return (
     <main className="home-page">
-      {/* HERO SECTION */}
-      <section className="hero">
-        <div className="info-container">
-          <div>
-            <h1 className="headline">
-              I&apos;m Mandjou, a Front End developer from Mali.
-            </h1>
-            <p className="subline">
-              Are you looking for perfect website ? Then you are in the right
-              place. Get professional results you are looking for. Your work
-              will be done on time and as you require. Just reach out and let me
-              know your needs.
-            </p>
-          </div>
-          <HeroIcon />
-        </div>
-        <div className="video-container">
-          <video
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            playsInline={true}
-            controls={false}
-            preload="auto"
-            src={
-              "https://firebasestorage.googleapis.com/v0/b/ikaziccsv.appspot.com/o/hero.mp4?alt=media&token=455c701e-67b5-42e3-ae76-33c5e6019556"
-            }
-          ></video>
-        </div>
-      </section>
+      <Hero />
 
       {/* SEPARATOR */}
       <SectionSeparator />
 
-      {/* OUR CLIENT SECTION */}
-      <section className="our-client-container">
-        <h2>Our Clients</h2>
-        <span className="vertical-bar" />
-        <div className="clients-logo-container">
-          <LogoSvg />
-          <LogoSvg />
-          <LogoSvg />
-          <LogoSvg />
-          <LogoSvg />
-          <LogoSvg />
-        </div>
-      </section>
+      <OurClients />
 
       {/* SEPARATOR */}
       <SectionSeparator />
@@ -98,7 +59,7 @@ export default function Home() {
               </div>
             </div>
             <VerticalSeparator />
-            <SectionSeparator />
+            <HorizontalSeparator />
             <div className="service">
               <DesignIcon />
               <div className="service-infos">
@@ -128,7 +89,7 @@ export default function Home() {
               </div>
             </div>
             <VerticalSeparator />
-            <SectionSeparator />
+            <HorizontalSeparator />
             <div className="service">
               <ContentIcon />
               <div className="service-infos">

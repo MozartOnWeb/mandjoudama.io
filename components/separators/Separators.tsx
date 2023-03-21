@@ -1,5 +1,4 @@
 "use client";
-import { useRef, useLayoutEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 export const SectionSeparator = () => {
