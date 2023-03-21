@@ -1,0 +1,152 @@
+.what-we-do-section {
+  display: grid;
+  grid-template-columns: 0.6fr 1px 1.5fr;
+  gap: 4em;
+  padding: 3em 0em;
+  h2 {
+    font-family: $body-font;
+    color: $black;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services-row {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: auto;
+
+    .horizontal-separator {
+      display: none;
+    }
+  }
+
+  .service {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5em;
+    padding: 1em 1em;
+    svg {
+      width: 7em;
+      height: 7em;
+    }
+  }
+
+  .service-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    width: 80%;
+    h5 {
+      font-family: $fav-font;
+      color: $black;
+      font-size: 2.2rem;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: $body-font;
+      color: $black;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      font-weight: 300;
+    }
+  }
+
+  .service-vertical-bar {
+    height: 100%;
+    width: 1px;
+    background-color: $black;
+    display: block;
+  }
+
+  .service-horizontal-bar {
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+  }
+
+  @media screen and (max-width: 990px) {
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    -ms-grid-columns: 0.25fr 1px 1.1fr;
+    grid-template-columns: 0.25fr 1px 1.1fr;
+
+    .services-container {
+      gap: 4em;
+
+      .section-separator {
+        display: block;
+        margin: 0em;
+      }
+    }
+
+    .services-row {
+      display: flex;
+      flex-direction: column;
+
+      .horizontal-separator {
+        display: block;
+        margin: 0em;
+      }
+
+      .vertical-separator {
+        display: none;
+      }
+    }
+
+    .service-infos {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2em;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 777px) {
+    display: flex;
+    padding: 1.5em 0em;
+    flex-direction: column;
+    .vertical-separator {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    margin: 0px;
+    gap: 5em;
+    .service {
+      flex-direction: column;
+      gap: 2.5em;
+      padding: 0px;
+
+      svg {
+        width: 7em;
+        height: 7em;
+      }
+    }
+    .services-container {
+      gap: 4.5em;
+
+      h5 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 1.2em;
+      }
+    }
+    .services-row {
+      gap: 4.5em;
+    }
+  }
+}

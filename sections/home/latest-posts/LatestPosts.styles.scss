@@ -1,15 +1,4 @@
-.home-page {
-  .horizontal-bar {
-    background-color: $black;
-    width: 100%;
-    height: 1px;
-    margin: 5em auto;
-    display: block;
-  }
-}
-
-//HOME LATEST POSTS
-.home-latest-posts {
+.home-latest-posts-section {
   min-height: 55lvh;
   .latest-posts-headline {
     display: flex;
