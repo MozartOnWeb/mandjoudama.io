@@ -25,3 +25,15 @@ export const VerticalSeparator = () => {
     />
   );
 };
+
+export const HorizontalSeparator = () => {
+  return (
+    <motion.span
+      initial={{ width: "0%", left: "0%" }}
+      whileInView={{ width: "100%" }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 1 }}
+      className="horizontal-separator"
+    />
+  );
+};
