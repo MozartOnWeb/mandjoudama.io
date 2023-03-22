@@ -40,7 +40,12 @@ export default function Blogs() {
     <main className="blogs-page">
       <section className="blogs-page-hero">
         <h1>Blogs</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>
+          Welcome to my blog, where I explore the latest trends and best
+          practices in front-end development. In this space, I share my
+          insights, tips, and tutorials on a variety of topics, including web
+          design, user experience, performance optimization, and more.
+        </p>
       </section>
 
       {/* SEPARATOR */}
