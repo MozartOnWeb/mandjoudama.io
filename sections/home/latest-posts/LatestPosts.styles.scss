@@ -1,15 +1,4 @@
-.home-page {
-  .horizontal-bar {
-    background-color: $black;
-    width: 100%;
-    height: 1px;
-    margin: 5em auto;
-    display: block;
-  }
-}
-
-//HOME LATEST POSTS
-.home-latest-posts {
+.home-latest-posts-section {
   min-height: 55lvh;
   .latest-posts-headline {
     display: flex;
@@ -23,7 +12,7 @@
     }
   }
 
-  .section-separator {
+  .horizontal-separator {
     margin: 3em 0em 6em 0em;
   }
 
@@ -33,7 +22,7 @@
     grid-template-columns: 1fr 1px 1fr 1px 1fr;
     gap: 5em;
 
-    .section-separator {
+    .horizontal-separator {
       display: none;
     }
   }
@@ -74,7 +63,7 @@
     .posts-container {
       grid-template-columns: none;
 
-      .section-separator {
+      .horizontal-separator {
         display: block;
         margin: 0;
       }

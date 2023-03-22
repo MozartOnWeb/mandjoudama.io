@@ -1,25 +1,25 @@
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
   HorizontalSeparator,
+  SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
+import { HowWeWorkIcon } from "@/public/assets/icons";
 
-import { HomeContactIcon } from "@/public/assets/icons";
-
-export const LetsTalkSection = () => {
+export const HowWeWork = () => {
   return (
-    <section className="lets-talk-section">
+    <section className="how-we-work-section">
       <div className="left">
-        <div className="left-content">
-          <h2>Contact</h2>
-          <h5>Let&apos;s bring your brand to the next level</h5>
+        <div>
+          <h2>How we work</h2>
+          <h5>We help our clients succeed with innovative strategies.</h5>
         </div>
 
-        <HomeContactIcon />
+        <HowWeWorkIcon />
       </div>
 
-      <HorizontalSeparator />
       <VerticalSeparator />
+      <HorizontalSeparator />
 
       <div className="right">
         <p>
@@ -27,9 +27,10 @@ export const LetsTalkSection = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua magna ac
           placerat erat.
         </p>
+
         <AnimatedButton
-          href="/contact"
-          letters={["l", "e", "t", "\u2019", "s", "\u00a0", "t", "a", "l", "k"]}
+          href="/services"
+          letters={["m", "y", "\u00a0", "s", "e", "r", "v", "i", "c", "e", "s"]}
         />
       </div>
     </section>

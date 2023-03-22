@@ -1,0 +1,91 @@
+// HERO SECTION
+.home-hero-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 10em;
+  .info-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+      font-family: $fav-font;
+      color: $black;
+      font-size: 6.8rem;
+      font-weight: 400;
+    }
+    p {
+      margin-top: 0.6em;
+      font-family: $body-font;
+      color: $black;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      font-weight: 400;
+    }
+    svg {
+      width: 10em;
+      height: 10em;
+      justify-self: flex-end;
+    }
+  }
+  .video-container {
+    width: 100%;
+    height: 60em;
+    border-radius: 10px;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    flex-direction: column;
+    height: auto;
+    gap: 7em;
+    .info-container {
+      width: 100%;
+      h1 {
+        font-size: 6rem;
+      }
+      p {
+        margin-top: 1em;
+      }
+      svg {
+        margin-top: 3em;
+      }
+    }
+
+    .video-container {
+      height: 80vw;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    gap: 5em;
+    .info-container {
+      h1 {
+        font-size: 5.4rem;
+      }
+      p {
+        margin-top: 1em;
+        font-weight: 300;
+      }
+    }
+  }
+  @media screen and (max-width: 412px) {
+    gap: 5em;
+    .info-container {
+      p {
+        font-size: 1.9rem;
+        line-height: 1.3em;
+      }
+      svg {
+        width: 9em;
+        height: 9em;
+        margin-top: 4em;
+      }
+    }
+  }
+}

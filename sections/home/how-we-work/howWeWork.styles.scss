@@ -1,27 +1,13 @@
-.lets-talk-section {
-  min-height: 70vh;
+.how-we-work-section {
   display: grid;
   grid-template-columns: 1fr 1px 0.4fr;
   gap: 5em;
-
-  .horizontal-separator {
-    display: none;
-  }
+  min-height: 75vh;
 
   .left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    svg {
-      width: 8em;
-      height: 8em;
-    }
-  }
-
-  .left-content {
-    display: flex;
-    flex-direction: column;
 
     h2 {
       font-family: $body-font;
@@ -30,7 +16,7 @@
       letter-spacing: 1px;
       font-weight: 400;
       text-transform: uppercase;
-      margin-bottom: 1em;
+      margin-bottom: 3em;
     }
 
     h5 {
@@ -39,6 +25,15 @@
       font-size: 7rem;
       font-weight: 400;
     }
+
+    svg {
+      width: 10em;
+      height: 10em;
+    }
+  }
+
+  .horizontal-separator {
+    display: none;
   }
 
   .right {
@@ -83,14 +78,13 @@
     }
 
     .horizontal-separator {
-      display: block;
-      margin: 0em;
       grid-area: center;
+      display: block;
+      margin: 0;
     }
 
     .vertical-separator {
       display: none;
-      grid-area: center;
     }
 
     .right {
@@ -108,10 +102,6 @@
   }
 
   @media screen and (max-width: 443px) {
-    min-height: 75vh;
-    .left {
-      gap: 15em;
-    }
     .left h5 {
       font-size: 4rem;
     }

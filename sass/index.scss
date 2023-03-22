@@ -25,6 +25,13 @@
 @import "../app/(user)/contact/contact.styles.scss";
 
 /* Import sections styles */
+@import "../sections/home/hero/homeHero.styles.scss";
+@import "../sections/home/our-clients/ourClients.styles.scss";
+@import "../sections/home/what-we-do/whatWeDo.styles.scss";
+@import "../sections/home/featured-work/FeaturedWork.styles.scss";
+@import "../sections/home/how-we-work/howWeWork.styles.scss";
+@import "../sections/home/our-values/OurValues.styles.scss";
+@import "../sections/home/latest-posts/LatestPosts.styles.scss";
 @import "../sections/services/SingleService.styles.scss";
 @import "../sections/contact/letsTalkSection.styles.scss";
 @import "../sections/work/singleWorkSection.styles.scss";

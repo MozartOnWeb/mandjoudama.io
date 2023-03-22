@@ -5,7 +5,10 @@ import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
-import { VerticalSeparator } from "@/components/separators/Separators";
+import {
+  SectionSeparator,
+  VerticalSeparator,
+} from "@/components/separators/Separators";
 import { WebDevIcon } from "@/public/assets/icons";
 
 type Props = {
@@ -64,6 +67,7 @@ export const SingleService = ({ id }: { id: string }) => {
       </div>
 
       <VerticalSeparator />
+      <SectionSeparator />
 
       <div className="right">
         <h5 className="service-headline">

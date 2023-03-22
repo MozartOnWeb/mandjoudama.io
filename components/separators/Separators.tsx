@@ -1,7 +1,38 @@
+"use client";
+import { motion } from "framer-motion";
+
 export const SectionSeparator = () => {
-  return <span className="section-separator" />;
+  return (
+    <motion.span
+      initial={{ width: "0%", left: "0%" }}
+      whileInView={{ width: "100%" }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 1 }}
+      className="section-separator"
+    />
+  );
 };
 
 export const VerticalSeparator = () => {
-  return <span className="vertical-separator" />;
+  return (
+    <motion.span
+      initial={{ height: "0%", top: "0%" }}
+      whileInView={{ height: "100%" }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 1 }}
+      className="vertical-separator"
+    />
+  );
+};
+
+export const HorizontalSeparator = ({ type }: { type?: string }) => {
+  return (
+    <motion.span
+      initial={{ width: "0%", left: "0%" }}
+      whileInView={{ width: "100%" }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 1 }}
+      className={`horizontal-separator ${type ? type : ""}`}
+    />
+  );
 };
