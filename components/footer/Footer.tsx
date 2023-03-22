@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { HorizontalSeparator } from "../separators/Separators";
+
 import { LogoSvg } from "@/public/assets/icons";
 
 export default function Footer() {
@@ -25,7 +27,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <span className="horizontal-bar" />
+      <HorizontalSeparator />
 
       <div className="copyright">
         <p>Yoboo Studio - Tous droits réservés.</p>

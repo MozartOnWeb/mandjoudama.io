@@ -1,11 +1,10 @@
 "use client";
 
-import { useRef } from "react";
-
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
+  HorizontalSeparator,
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
@@ -22,18 +21,8 @@ type Props = {
 };
 
 export const SingleService = ({ id }: { id: string }) => {
-  const targetRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["start end", "end end"],
-  });
-
-  const position = useTransform(scrollYProgress, (pos) => {
-    return pos === 1 ? "relative" : "relative";
-  });
-
   return (
-    <motion.div ref={targetRef} id={id} className="single-service">
+    <motion.div id={id} className="single-service">
       <div className="left">
         <div className="left-inner">
           <div className="service-header">
@@ -67,7 +56,7 @@ export const SingleService = ({ id }: { id: string }) => {
       </div>
 
       <VerticalSeparator />
-      <SectionSeparator />
+      <HorizontalSeparator />
 
       <div className="right">
         <h5 className="service-headline">
