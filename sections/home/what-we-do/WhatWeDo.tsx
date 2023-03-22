@@ -14,7 +14,7 @@ import {
 export const WhatWeDo = () => {
   return (
     <section className="what-we-do-section">
-      <h2>What We Do</h2>
+      <h2>What I Do</h2>
       <VerticalSeparator />
 
       <div className="services-container">
