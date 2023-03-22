@@ -14,10 +14,15 @@ export default function Footer() {
             <h2>Mandjou Dama.</h2>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aspernatur, libero nisi dolore earum neque dignissimos ducimus harum
-            adipisci recusandae suscipit.
+            Thank you for taking the time to explore my Front End Developer
+            portfolio website. Whether you are a potential client, partner, or
+            simply interested in my work, I hope that my portfolio has provided
+            you with insight into my skills and capabilities. If you have any
+            questions or would like to learn more about my services, please
+            don&apos;t hesitate to reach out to me. I look forward to hearing
+            from you soon.
           </p>
+          <p className="outro">Let&apos;s Build Something Great Together !</p>
         </div>
 
         <div className="bottom">

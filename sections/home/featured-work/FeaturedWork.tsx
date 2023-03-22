@@ -19,8 +19,8 @@ export const FeaturedWork = () => {
             Featured <br /> Work
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
+            I am excited to share my featured work to showcase my passion for
+            web development.
           </p>
           <AnimatedButton
             href="/works"

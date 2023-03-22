@@ -89,21 +89,27 @@
 
     .right {
       grid-area: right;
+      gap: 4em;
     }
   }
 
   @media screen and (max-width: 585px) {
     .left {
       gap: 10em;
-    }
-    .right {
-      gap: 4em;
+      h5 {
+        font-size: 5em;
+      }
     }
   }
 
   @media screen and (max-width: 443px) {
     .left h5 {
       font-size: 4rem;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .left h5 {
+      font-size: 3.2rem;
     }
   }
 }
