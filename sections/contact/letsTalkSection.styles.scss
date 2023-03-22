@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 1px 0.4fr;
   gap: 5em;
 
-  .section-separator {
+  .horizontal-separator {
     display: none;
   }
 
@@ -82,7 +82,7 @@
       }
     }
 
-    .section-separator {
+    .horizontal-separator {
       display: block;
       margin: 0em;
       grid-area: center;

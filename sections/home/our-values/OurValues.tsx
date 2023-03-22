@@ -1,4 +1,5 @@
 import {
+  HorizontalSeparator,
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
@@ -8,7 +9,7 @@ export const OurValues = () => {
     <section className="our-values-section">
       <h2 className="our-values-headline">Our values</h2>
 
-      <SectionSeparator />
+      <HorizontalSeparator />
 
       <div className="values-bottom-container">
         <div className="left">
@@ -28,8 +29,6 @@ export const OurValues = () => {
         <VerticalSeparator />
 
         <div className="right">
-          {/* RIGHT ITEMS */}
-
           <div className="right-item">
             <p className="number">01</p>
 
@@ -43,7 +42,7 @@ export const OurValues = () => {
             </div>
           </div>
 
-          <SectionSeparator />
+          <HorizontalSeparator />
 
           <div className="right-item">
             <p className="number">02</p>
@@ -58,7 +57,7 @@ export const OurValues = () => {
             </div>
           </div>
 
-          <SectionSeparator />
+          <HorizontalSeparator />
 
           <div className="right-item">
             <p className="number">03</p>
@@ -72,8 +71,6 @@ export const OurValues = () => {
               </p>
             </div>
           </div>
-
-          {/* RIGHT ITEMS */}
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@
     }
   }
 
-  .section-separator {
+  .horizontal-separator {
     margin: 3em 0em 6em 0em;
   }
 
@@ -22,7 +22,7 @@
     grid-template-columns: 1fr 1px 1fr 1px 1fr;
     gap: 5em;
 
-    .section-separator {
+    .horizontal-separator {
       display: none;
     }
   }
@@ -63,7 +63,7 @@
     .posts-container {
       grid-template-columns: none;
 
-      .section-separator {
+      .horizontal-separator {
         display: block;
         margin: 0;
       }

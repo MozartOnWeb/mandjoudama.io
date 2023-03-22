@@ -32,7 +32,7 @@ export const HorizontalSeparator = ({ type }: { type?: string }) => {
       whileInView={{ width: "100%" }}
       transition={{ duration: 1 }}
       viewport={{ once: true, amount: 1 }}
-      className={`horizontal-separator ${type}`}
+      className={`horizontal-separator ${type ? type : ""}`}
     />
   );
 };

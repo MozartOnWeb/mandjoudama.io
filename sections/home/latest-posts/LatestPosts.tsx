@@ -1,6 +1,7 @@
 import { LittleBlog } from "@/components/blogs/LittleBlog";
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
+  HorizontalSeparator,
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
@@ -17,14 +18,14 @@ export const LatestPosts = () => {
         />
       </div>
 
-      <SectionSeparator />
+      <HorizontalSeparator />
 
       <div className="posts-container">
         <LittleBlog />
-        <SectionSeparator />
+        <HorizontalSeparator />
         <VerticalSeparator />
         <LittleBlog />
-        <SectionSeparator />
+        <HorizontalSeparator />
         <VerticalSeparator />
         <LittleBlog />
       </div>

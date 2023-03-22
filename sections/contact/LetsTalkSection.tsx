@@ -1,6 +1,6 @@
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
-  SectionSeparator,
+  HorizontalSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
 
@@ -18,7 +18,7 @@ export const LetsTalkSection = () => {
         <HomeContactIcon />
       </div>
 
-      <SectionSeparator />
+      <HorizontalSeparator />
       <VerticalSeparator />
 
       <div className="right">
