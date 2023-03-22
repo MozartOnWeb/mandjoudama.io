@@ -37,6 +37,7 @@ export const SingleService = ({ id }: { id: string }) => {
           </div>
 
           <AnimatedButton
+            href="/contact"
             letters={[
               "g",
               "e",
