@@ -4,6 +4,8 @@ import { SectionSeparator } from "@/components/separators/Separators";
 import { SingleService } from "@/sections/services/SingleService";
 import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
 
+import { WebDevIcon, DesignIcon } from "@/public/assets/icons";
+
 export default function Services() {
   return (
     <main className="services-page">
@@ -28,10 +30,31 @@ export default function Services() {
       <SectionSeparator />
 
       <div>
-        <SingleService id="web-dev" />
+        <SingleService
+          serviceName="Web Dev"
+          serviceIcon={<WebDevIcon />}
+          serviceCategories={[
+            "Web Dev",
+            "Seo Optimization",
+            "Responsive Design",
+          ]}
+          serviceHeadline="Boost your online presence with our cutting-edge web development solutions. I create custom websites that are responsive, user-friendly, and optimized for search engines."
+          id="web-dev"
+        />
         {/* SEPARATOR */}
         <SectionSeparator />
-        <SingleService id="design" />
+
+        <SingleService
+          serviceName="Web Design"
+          serviceIcon={<DesignIcon />}
+          serviceCategories={[
+            "Web Design",
+            "Seo Optimization",
+            "Responsive Design",
+          ]}
+          serviceHeadline="Enhance your online presence with our innovative UI design solutions. I specialize in creating custom website designs that are visually stunning, intuitive to use, and optimized for user engagement."
+          id="design"
+        />
       </div>
 
       {/* SEPARATOR */}

@@ -11,29 +11,36 @@ import {
 import { WebDevIcon } from "@/public/assets/icons";
 
 type Props = {
-  serviceIcon: JSX.Element;
-  serviceName: string;
-  serviceCategories: string[];
-  serviceHeadline: string;
-  serviceDescription1: string;
-  serviceDescription2: string;
-  serviceVideo: HTMLVideoElement;
+  id?: string;
+  serviceIcon?: JSX.Element;
+  serviceName?: string;
+  serviceCategories?: string[];
+  serviceHeadline?: string;
+  serviceDescription1?: string;
+  serviceDescription2?: string;
+  serviceVideo?: HTMLVideoElement;
 };
 
-export const SingleService = ({ id }: { id: string }) => {
+export const SingleService = ({
+  id,
+  serviceHeadline,
+  serviceCategories,
+  serviceName,
+  serviceIcon,
+}: Props) => {
   return (
     <motion.div id={id} className="single-service">
       <div className="left">
         <div className="left-inner">
           <div className="service-header">
-            <WebDevIcon />
-            <h2>Web Dev</h2>
+            {serviceIcon}
+            <h2>{serviceName}</h2>
           </div>
 
           <div className="service-categories">
-            <p>Web Design</p>
-            <p>Web Dev</p>
-            <p>Seo Optimization</p>
+            {serviceCategories?.map((category) => (
+              <p key={category}>{category}</p>
+            ))}
           </div>
 
           <AnimatedButton
@@ -60,12 +67,7 @@ export const SingleService = ({ id }: { id: string }) => {
       <HorizontalSeparator />
 
       <div className="right">
-        <h5 className="service-headline">
-          Boost your online presence with our cutting-edge web development
-          solutions. We create custom websites that are responsive,
-          user-friendly, and optimized for search engines. Contact us now to
-          learn more!
-        </h5>
+        <h5 className="service-headline">{serviceHeadline}</h5>
 
         <div className="service-description">
           <p>
