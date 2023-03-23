@@ -12,8 +12,8 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET as string;
 
 export default defineConfig({
   basePath: "/studio",
-  name: "NEXT_SANITY_STUDIO",
-  title: "NEXT SANITY STUDIO",
+  name: "Mandjou_Dama",
+  title: "Mandjou Dama",
 
   projectId,
   dataset,
