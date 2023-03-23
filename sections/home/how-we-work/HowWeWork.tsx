@@ -1,7 +1,6 @@
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
   HorizontalSeparator,
-  SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
 import { HowWeWorkIcon } from "@/public/assets/icons";
@@ -11,8 +10,10 @@ export const HowWeWork = () => {
     <section className="how-we-work-section">
       <div className="left">
         <div>
-          <h2>How we work</h2>
-          <h5>We help our clients succeed with innovative strategies.</h5>
+          <h2>How I work</h2>
+          <h5>
+            Revolutionize your website with cutting-edge development techniques.
+          </h5>
         </div>
 
         <HowWeWorkIcon />
@@ -23,9 +24,13 @@ export const HowWeWork = () => {
 
       <div className="right">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua magna ac
-          placerat erat.
+          At the core of my front-end development philosophy is the user
+          experience. I strive to create web applications that are intuitive,
+          efficient, and enjoyable to use. I use the latest front-end
+          development technologies and best practices to build interfaces that
+          are optimized for performance and accessibility. With my focus on user
+          experience, I can help you improve customer satisfaction and drive
+          business growth.
         </p>
 
         <AnimatedButton

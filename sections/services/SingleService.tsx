@@ -1,53 +1,52 @@
 "use client";
 
-import { useRef } from "react";
-
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
+  HorizontalSeparator,
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
 import { WebDevIcon } from "@/public/assets/icons";
 
 type Props = {
-  serviceIcon: JSX.Element;
-  serviceName: string;
-  serviceCategories: string[];
-  serviceHeadline: string;
-  serviceDescription1: string;
-  serviceDescription2: string;
-  serviceVideo: HTMLVideoElement;
+  id?: string;
+  serviceIcon?: JSX.Element;
+  serviceName?: string;
+  serviceCategories?: string[];
+  serviceHeadline?: string;
+  serviceDescription1?: string;
+  serviceDescription2?: string;
+  serviceVideo?: HTMLVideoElement;
 };
 
-export const SingleService = ({ id }: { id: string }) => {
-  const targetRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["start end", "end end"],
-  });
-
-  const position = useTransform(scrollYProgress, (pos) => {
-    return pos === 1 ? "relative" : "relative";
-  });
-
+export const SingleService = ({
+  id,
+  serviceHeadline,
+  serviceDescription1,
+  serviceDescription2,
+  serviceCategories,
+  serviceName,
+  serviceIcon,
+}: Props) => {
   return (
-    <motion.div ref={targetRef} id={id} className="single-service">
+    <motion.div id={id} className="single-service">
       <div className="left">
         <div className="left-inner">
           <div className="service-header">
-            <WebDevIcon />
-            <h2>Web Dev</h2>
+            {serviceIcon}
+            <h2>{serviceName}</h2>
           </div>
 
           <div className="service-categories">
-            <p>Web Design</p>
-            <p>Web Dev</p>
-            <p>Seo Optimization</p>
+            {serviceCategories?.map((category) => (
+              <p key={category}>{category}</p>
+            ))}
           </div>
 
           <AnimatedButton
+            href="/contact"
             letters={[
               "g",
               "e",
@@ -67,29 +66,14 @@ export const SingleService = ({ id }: { id: string }) => {
       </div>
 
       <VerticalSeparator />
-      <SectionSeparator />
+      <HorizontalSeparator />
 
       <div className="right">
-        <h5 className="service-headline">
-          Boost your online presence with our cutting-edge web development
-          solutions. We create custom websites that are responsive,
-          user-friendly, and optimized for search engines. Contact us now to
-          learn more!
-        </h5>
+        <h5 className="service-headline">{serviceHeadline}</h5>
 
         <div className="service-description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            expedita, est alias natus quae accusamus voluptas totam tempora
-            adipisci in porro asperiores et non deserunt mollitia iusto cumque
-            dignissimos dolor.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            expedita, est alias natus quae accusamus voluptas totam tempora
-            adipisci in porro asperiores et non deserunt mollitia iusto cumque
-            dignissimos dolor.
-          </p>
+          <p>{serviceDescription1}</p>
+          <p>{serviceDescription2}</p>
         </div>
 
         <video

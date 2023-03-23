@@ -7,7 +7,7 @@ import {
 export const OurValues = () => {
   return (
     <section className="our-values-section">
-      <h2 className="our-values-headline">Our values</h2>
+      <h2 className="our-values-headline">My values</h2>
 
       <HorizontalSeparator />
 

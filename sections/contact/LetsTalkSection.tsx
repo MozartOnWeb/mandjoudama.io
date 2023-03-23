@@ -12,7 +12,7 @@ export const LetsTalkSection = () => {
       <div className="left">
         <div className="left-content">
           <h2>Contact</h2>
-          <h5>Let&apos;s bring your brand to the next level</h5>
+          <h5>Let&apos;s bring your brand to the next level.</h5>
         </div>
 
         <HomeContactIcon />
@@ -23,9 +23,10 @@ export const LetsTalkSection = () => {
 
       <div className="right">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua magna ac
-          placerat erat.
+          Whether you need a new website, a redesign, or ongoing support and
+          maintenance, I am here to help. Contact me today to learn more about
+          how I can help you elevate your brand and achieve your business
+          objectives.
         </p>
         <AnimatedButton
           href="/contact"

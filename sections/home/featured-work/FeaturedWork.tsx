@@ -4,7 +4,6 @@ import Link from "next/link";
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 import {
   HorizontalSeparator,
-  SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
 
@@ -16,11 +15,11 @@ export const FeaturedWork = () => {
       <div className="left-container">
         <div className="left-inner-container">
           <h2>
-            Featured <br /> Work
+            Featured <br /> Work.
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor.
+            I am excited to share my featured work to showcase my passion for
+            web development.
           </p>
           <AnimatedButton
             href="/works"

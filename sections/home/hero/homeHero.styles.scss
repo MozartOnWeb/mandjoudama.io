@@ -19,9 +19,9 @@
       margin-top: 0.6em;
       font-family: $body-font;
       color: $black;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
-      font-weight: 400;
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1.3em;
     }
     svg {
       width: 10em;
@@ -85,6 +85,13 @@
         width: 9em;
         height: 9em;
         margin-top: 4em;
+      }
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .info-container {
+      h1 {
+        font-size: 4rem;
       }
     }
   }

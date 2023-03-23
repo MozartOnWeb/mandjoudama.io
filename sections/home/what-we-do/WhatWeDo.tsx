@@ -14,7 +14,7 @@ import {
 export const WhatWeDo = () => {
   return (
     <section className="what-we-do-section">
-      <h2>What We Do</h2>
+      <h2>What I Do</h2>
       <VerticalSeparator />
 
       <div className="services-container">
@@ -25,9 +25,9 @@ export const WhatWeDo = () => {
             <div className="service-infos">
               <h5>Web Dev</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
-                ducimus iure tenetur nesciunt perferendis, harum est voluptas
-                similique quisquam ipsa.
+                Your business deserves a custom website that reflects your brand
+                and meets your specific needs. so it&apos;s important to make
+                sure it&apos;s professional, fast, and easy to use.
               </p>
             </div>
           </div>
@@ -38,18 +38,18 @@ export const WhatWeDo = () => {
             <div className="service-infos">
               <h5>Design</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
-                ducimus iure tenetur nesciunt perferendis, harum est voluptas
-                similique quisquam ipsa.
+                Your website or web application is your digital storefront, and
+                the quality of your user interface can make all the difference
+                in converting visitors into customers.
               </p>
             </div>
           </div>
         </div>
 
-        <HorizontalSeparator type="with-margin" />
+        {/* <HorizontalSeparator type="with-margin" /> */}
 
         {/* second row */}
-        <div className="services-row">
+        {/* <div className="services-row">
           <div className="service">
             <BrandingIcon />
             <div className="service-infos">
@@ -74,7 +74,7 @@ export const WhatWeDo = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
