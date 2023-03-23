@@ -33,6 +33,8 @@ export default function Services() {
         <SingleService
           serviceName="Web Dev"
           serviceIcon={<WebDevIcon />}
+          serviceDescription1="As a front-end web developer, I understand that a strong online presence is essential for the success of any business. That's why I work closely with my clients to craft custom websites that leave a lasting impression on their potential customers. With my cutting-edge web development solutions, I can help your business achieve a strong online presence that sets you apart from the competition."
+          serviceDescription2="I collaborate closely with my clients to understand their business objectives and target audience. By incorporating the latest front-end technologies, I can create custom websites that are not only visually stunning but also highly responsive and user-friendly. Whether you need a simple website or a more complex web app, I have the expertise to deliver web development solutions that meet your requirements."
           serviceCategories={[
             "Web Dev",
             "Seo Optimization",
@@ -47,6 +49,8 @@ export default function Services() {
         <SingleService
           serviceName="Web Design"
           serviceIcon={<DesignIcon />}
+          serviceDescription1="As a UI designer, I understand that a visually appealing and user-friendly website is essential for the success of any business. That's why I work closely with my clients to create custom UI designs that leave a lasting impression on their potential customers. With my expertise in UI design, I can help your business achieve a strong online presence that sets you apart from the competition."
+          serviceDescription2="I collaborate closely with my clients to understand their brand identity, target audience, and business objectives. By incorporating the latest UI design trends, I can create custom designs that are not only visually stunning but also highly intuitive and user-friendly. Whether you need a website redesign or a new website from scratch, I have the skills to deliver UI design solutions that meet your requirements."
           serviceCategories={[
             "Web Design",
             "Seo Optimization",

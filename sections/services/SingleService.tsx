@@ -24,6 +24,8 @@ type Props = {
 export const SingleService = ({
   id,
   serviceHeadline,
+  serviceDescription1,
+  serviceDescription2,
   serviceCategories,
   serviceName,
   serviceIcon,
@@ -70,18 +72,8 @@ export const SingleService = ({
         <h5 className="service-headline">{serviceHeadline}</h5>
 
         <div className="service-description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            expedita, est alias natus quae accusamus voluptas totam tempora
-            adipisci in porro asperiores et non deserunt mollitia iusto cumque
-            dignissimos dolor.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            expedita, est alias natus quae accusamus voluptas totam tempora
-            adipisci in porro asperiores et non deserunt mollitia iusto cumque
-            dignissimos dolor.
-          </p>
+          <p>{serviceDescription1}</p>
+          <p>{serviceDescription2}</p>
         </div>
 
         <video
