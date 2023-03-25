@@ -15,6 +15,8 @@ export const metadata = {
   keywords: ["Mandjou", "Dama"],
   description:
     "I'm Mandjou, a 24 years old react.js front-end developer from Mali.",
+  category: "Technology",
+  creator: "Mandjou Dama",
   robots: {
     index: true,
     follow: true,
@@ -27,11 +29,14 @@ export const metadata = {
     },
   },
   icons: {
-    shortcut: "./favicon.ico",
+    shortcut: "/fav.ico",
   },
   verification: {
     //google: "eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw",
     //yandex: "14d2e73487fa6c71",
+    other: {
+      me: ["mandjoudama@gmail.com", "https://mandjoudama.io"],
+    },
   },
 };
 
