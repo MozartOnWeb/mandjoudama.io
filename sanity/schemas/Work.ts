@@ -33,6 +33,19 @@ export const Work: SchemaTypeDefinition = {
       validation: (Rule: Rule) => Rule.required(),
     },
     {
+      name: "images",
+      title: "Images",
+      type: "array",
+      of: [
+        {
+          type: "image",
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
+    },
+    {
       name: "client",
       title: "Client",
       type: "string",
