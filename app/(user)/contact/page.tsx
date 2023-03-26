@@ -5,12 +5,15 @@ import { FormEvent, useState } from "react";
 import Link from "next/link";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Lottie from "lottie-react";
 
 import { Toast } from "@/components/toast/Toast";
 import {
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
+
+import Loading from "../../../public/assets/animation/loading.json";
 
 const faqs = [
   {
@@ -41,6 +44,17 @@ export default function Contact() {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  const [toast, setToast] = useState<boolean>(false);
+
+  const handleAnimation = (e: FormEvent) => {
+    e.preventDefault();
+
+    setToast(true);
+
+    setTimeout(() => {
+      setToast(false);
+    }, 2500);
+  };
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -70,6 +84,11 @@ export default function Contact() {
       setEmail("");
       setMessage("");
       setLoading(false);
+      setToast(true);
+
+      setTimeout(() => {
+        setToast(false);
+      }, 1000);
     } catch (error) {
       console.log(error);
     }
@@ -104,7 +123,7 @@ export default function Contact() {
         </div>
 
         <div className="right">
-          <form method="POST" onSubmit={onSubmit}>
+          <form method="POST" onSubmit={handleAnimation}>
             <input
               onChange={(e) => setName(e.target.value)}
               value={name}
@@ -129,7 +148,18 @@ export default function Contact() {
               name="message"
               required
             />
-            <button type="submit">{loading ? "" : "Submit"}</button>
+            <button type="submit">
+              {loading ? (
+                <Lottie
+                  autoPlay
+                  loop
+                  style={{ width: "100%", height: "100%" }}
+                  animationData={Loading}
+                />
+              ) : (
+                "Submit"
+              )}
+            </button>
           </form>
         </div>
       </section>
@@ -198,7 +228,7 @@ export default function Contact() {
       </section>
 
       <SectionSeparator />
-      <Toast />
+      <AnimatePresence>{toast && <Toast />}</AnimatePresence>
     </main>
   );
 }
