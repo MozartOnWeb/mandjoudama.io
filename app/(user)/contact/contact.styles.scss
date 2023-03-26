@@ -98,6 +98,11 @@
         }
       }
 
+      input.error,
+      textarea.error {
+        border-bottom: 1px solid red;
+      }
+
       button {
         background-color: $black;
         color: $white;
