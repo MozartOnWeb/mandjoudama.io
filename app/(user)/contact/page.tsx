@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { motion, AnimatePresence } from "framer-motion";
 
+import { Toast } from "@/components/toast/Toast";
 import {
   SectionSeparator,
   VerticalSeparator,
@@ -39,6 +40,7 @@ export default function Contact() {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -51,6 +53,7 @@ export default function Contact() {
     // emailInput.classList.toggle("error", email.length === 0);
     // messageInput.classList.toggle("error", message.length === 0);
 
+    setLoading(true);
     try {
       await fetch("/api/contact", {
         method: "POST",
@@ -66,6 +69,7 @@ export default function Contact() {
       setName("");
       setEmail("");
       setMessage("");
+      setLoading(false);
     } catch (error) {
       console.log(error);
     }
@@ -125,7 +129,7 @@ export default function Contact() {
               name="message"
               required
             />
-            <button type="submit">Submit</button>
+            <button type="submit">{loading ? "" : "Submit"}</button>
           </form>
         </div>
       </section>
@@ -194,6 +198,7 @@ export default function Contact() {
       </section>
 
       <SectionSeparator />
+      <Toast />
     </main>
   );
 }
