@@ -7,7 +7,6 @@ export const Toast = () => {
       initial={{ x: 30, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: 30, opacity: 0 }}
-      whileHover={{ scale: 1.1 }}
       className="toast-container"
     >
       <h5>your message has been sent</h5>

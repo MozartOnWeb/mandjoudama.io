@@ -46,16 +46,6 @@ export default function Contact() {
   const [loading, setLoading] = useState<boolean>(false);
   const [toast, setToast] = useState<boolean>(false);
 
-  const handleAnimation = (e: FormEvent) => {
-    e.preventDefault();
-
-    setToast(true);
-
-    setTimeout(() => {
-      setToast(false);
-    }, 2500);
-  };
-
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     // const form = e.currentTarget as HTMLFormElement;
@@ -88,7 +78,7 @@ export default function Contact() {
 
       setTimeout(() => {
         setToast(false);
-      }, 1000);
+      }, 2500);
     } catch (error) {
       console.log(error);
     }
@@ -123,7 +113,7 @@ export default function Contact() {
         </div>
 
         <div className="right">
-          <form method="POST" onSubmit={handleAnimation}>
+          <form method="POST" onSubmit={onSubmit}>
             <input
               onChange={(e) => setName(e.target.value)}
               value={name}
