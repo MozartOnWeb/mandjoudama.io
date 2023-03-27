@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import {
+  HorizontalSeparator,
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
@@ -16,6 +17,7 @@ export default function Blog() {
     <main className="single-blog-page">
       <section className="single-blog-page-hero">
         <AnimatedButton
+          href=""
           style="outline"
           letters={["g", "o", "\u00a0", "b", "a", "c", "k"]}
         />
@@ -107,6 +109,7 @@ export default function Blog() {
         </div>
 
         <VerticalSeparator />
+        <HorizontalSeparator />
 
         <div className="right">
           <div className="blog-sidebar-container">
