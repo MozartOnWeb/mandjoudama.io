@@ -1,15 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 
 import Link from "next/link";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Lottie from "lottie-react";
 
+import { Toast } from "@/components/toast/Toast";
 import {
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
+
+import Loading from "../../../public/assets/animation/loading.json";
 
 const faqs = [
   {
@@ -36,6 +40,49 @@ const faqs = [
 
 export default function Contact() {
   const [isOpen, setIsOpen] = useState<string | null>(null);
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
+  const [toast, setToast] = useState<boolean>(false);
+
+  const onSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    // const form = e.currentTarget as HTMLFormElement;
+    // const nameInput = form.elements.namedItem("name") as HTMLInputElement;
+    // const emailInput = form.elements.namedItem("email") as HTMLInputElement;
+    // const messageInput = form.elements.namedItem("message") as HTMLInputElement;
+
+    // nameInput.classList.toggle("error", name.length === 0);
+    // emailInput.classList.toggle("error", email.length === 0);
+    // messageInput.classList.toggle("error", message.length === 0);
+
+    setLoading(true);
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      });
+      setName("");
+      setEmail("");
+      setMessage("");
+      setLoading(false);
+      setToast(true);
+
+      setTimeout(() => {
+        setToast(false);
+      }, 2500);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const variants = {
     open: { rotate: 45 },
@@ -66,11 +113,43 @@ export default function Contact() {
         </div>
 
         <div className="right">
-          <form method="post">
-            <input placeholder="Your Name" type="text" />
-            <input placeholder="Your Email" type="email" />
-            <textarea placeholder="Your Message" rows={8} />
-            <button type="submit">Submit</button>
+          <form method="POST" onSubmit={onSubmit}>
+            <input
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+              placeholder="Your Name"
+              type="text"
+              name="name"
+              required
+            />
+            <input
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              placeholder="Your Email"
+              type="email"
+              name="email"
+              required
+            />
+            <textarea
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+              placeholder="Your Message"
+              rows={8}
+              name="message"
+              required
+            />
+            <button type="submit">
+              {loading ? (
+                <Lottie
+                  autoPlay
+                  loop
+                  style={{ width: "100%", height: "100%" }}
+                  animationData={Loading}
+                />
+              ) : (
+                "Submit"
+              )}
+            </button>
           </form>
         </div>
       </section>
@@ -139,6 +218,7 @@ export default function Contact() {
       </section>
 
       <SectionSeparator />
+      <AnimatePresence>{toast && <Toast />}</AnimatePresence>
     </main>
   );
 }

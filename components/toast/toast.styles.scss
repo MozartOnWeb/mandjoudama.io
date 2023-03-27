@@ -1,0 +1,32 @@
+.toast-container {
+  position: fixed;
+  z-index: 3;
+  top: 88vh;
+  right: 5em;
+  background-color: $background-color;
+  padding: 2.5em;
+  border: 1px solid $black;
+
+  h5 {
+    font-family: $fav-font;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 0.4em;
+  }
+  p {
+    font-family: $body-font;
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: 5em;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: 0px auto;
+    top: 5em;
+  }
+}

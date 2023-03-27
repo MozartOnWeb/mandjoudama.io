@@ -36,7 +36,7 @@ export const WhatWeDo = () => {
           <div className="service">
             <DesignIcon />
             <div className="service-infos">
-              <h5>Design</h5>
+              <h5>Ui Design</h5>
               <p>
                 Your website or web application is your digital storefront, and
                 the quality of your user interface can make all the difference

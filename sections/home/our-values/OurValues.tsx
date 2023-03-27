@@ -1,6 +1,5 @@
 import {
   HorizontalSeparator,
-  SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
 
@@ -33,11 +32,11 @@ export const OurValues = () => {
             <p className="number">01</p>
 
             <div className="content">
-              <h5>Vision</h5>
+              <h5>Creativity</h5>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officia, ullam aliquid velit expedita laborum atque amet aut
-                officiis corrupti quidem!
+                I believe that by embracing creativity and taking risks, we can
+                create truly memorable web experiences that resonate with users
+                and help businesses achieve their goals.
               </p>
             </div>
           </div>
@@ -48,11 +47,11 @@ export const OurValues = () => {
             <p className="number">02</p>
 
             <div className="content">
-              <h5>Innovation</h5>
+              <h5>Efficiency</h5>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officia, ullam aliquid velit expedita laborum atque amet aut
-                officiis corrupti quidem!
+                I believe that efficiency is not just about getting the job done
+                quickly, but also about delivering great results that meet the
+                client&apos;s needs and exceed their expectations.
               </p>
             </div>
           </div>
@@ -63,11 +62,11 @@ export const OurValues = () => {
             <p className="number">03</p>
 
             <div className="content">
-              <h5>Connection</h5>
+              <h5>Versatility</h5>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officia, ullam aliquid velit expedita laborum atque amet aut
-                officiis corrupti quidem!
+                I believe that versatility is not just about having a diverse
+                range of technical skills, but also about being able to think
+                creatively and find innovative solutions to complex challenges.
               </p>
             </div>
           </div>

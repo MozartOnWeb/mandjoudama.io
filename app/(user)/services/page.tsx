@@ -20,8 +20,8 @@ export default function Services() {
           />
           <OnPageLink
             style="outline"
-            letters={["d", "e", "s", "i", "g", "n"]}
-            href="#design"
+            letters={["u", "i", "\u00a0", "d", "e", "s", "i", "g", "n"]}
+            href="#ui-design"
           />
         </div>
       </section>
@@ -47,17 +47,17 @@ export default function Services() {
         <SectionSeparator />
 
         <SingleService
-          serviceName="Web Design"
+          serviceName="Ui Design"
           serviceIcon={<DesignIcon />}
           serviceDescription1="As a UI designer, I understand that a visually appealing and user-friendly website is essential for the success of any business. That's why I work closely with my clients to create custom UI designs that leave a lasting impression on their potential customers. With my expertise in UI design, I can help your business achieve a strong online presence that sets you apart from the competition."
           serviceDescription2="I collaborate closely with my clients to understand their brand identity, target audience, and business objectives. By incorporating the latest UI design trends, I can create custom designs that are not only visually stunning but also highly intuitive and user-friendly. Whether you need a website redesign or a new website from scratch, I have the skills to deliver UI design solutions that meet your requirements."
           serviceCategories={[
-            "Web Design",
-            "Seo Optimization",
-            "Responsive Design",
+            "Web & Mobile Design",
+            "User Research",
+            "Branding Design",
           ]}
           serviceHeadline="Enhance your online presence with our innovative UI design solutions. I specialize in creating custom website designs that are visually stunning, intuitive to use, and optimized for user engagement."
-          id="design"
+          id="ui-design"
         />
       </div>
 
