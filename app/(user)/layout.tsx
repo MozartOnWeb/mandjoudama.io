@@ -35,7 +35,7 @@ export const metadata = {
     //google: "eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw",
     //yandex: "14d2e73487fa6c71",
     other: {
-      me: ["mandjoudama@gmail.com", "https://mandjoudama.io"],
+      me: ["mandjoudama@gmail.com", "https://mandjoudama.ml"],
     },
   },
 };

@@ -6,11 +6,11 @@ import {
   SectionSeparator,
   VerticalSeparator,
 } from "@/components/separators/Separators";
-
 import { AnimatedButton } from "@/components/buttons/AnimatedButton";
 
-import Image1 from "../../../../public/assets/images/4.png";
 import { NewsLetter } from "@/sections/blogs/NewsLetter";
+
+import Image1 from "../../../../public/assets/images/4.png";
 
 export default function Blog() {
   return (
