@@ -32,7 +32,7 @@ export const metadata = {
     shortcut: "/fav.ico",
   },
   verification: {
-    //google: "eZSdmzAXlLkKhNJzfgwDqWORghxnJ8qR9_CHdAh5-xw",
+    google: "zJ3JUWckcXM-wlkSjQMzJZ6FQnY2FlqVTK_E6u7xcMs",
     //yandex: "14d2e73487fa6c71",
     other: {
       me: ["mandjoudama@gmail.com", "https://mandjoudama.ml"],
