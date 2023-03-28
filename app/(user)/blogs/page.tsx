@@ -11,6 +11,12 @@ import {
 import Image4 from "../../../public/assets/images/1.jpg";
 import { NewsLetter } from "@/sections/blogs/NewsLetter";
 
+export const metadata = {
+  title: "Blogs",
+  description:
+    "Check out all of the blog content write by Mandjou Dama, a frontend developer specializing in Web Development & UI Design.",
+};
+
 const blogs = [
   {
     id: 1,

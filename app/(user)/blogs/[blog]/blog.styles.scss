@@ -151,6 +151,10 @@
     .vertical-separator {
       grid-area: bar;
     }
+    .horizontal-separator {
+      grid-area: bar;
+      display: none;
+    }
 
     .right {
       grid-area: right;
@@ -223,6 +227,11 @@
       flex-direction: column;
 
       .vertical-separator {
+        display: none;
+      }
+
+      .horizontal-separator {
+        display: block;
         width: 100%;
         height: 1px;
       }

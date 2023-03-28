@@ -6,6 +6,12 @@ import { LetsTalkSection } from "@/sections/contact/LetsTalkSection";
 
 import { WebDevIcon, DesignIcon } from "@/public/assets/icons";
 
+export const metadata = {
+  title: "Services",
+  description:
+    "Check out all of the services provides by Mandjou Dama, a frontend developer specializing in Web Development & UI Design. View the portfolio and get in touch to collaborate on your next project.",
+};
+
 export default function Services() {
   return (
     <main className="services-page">
