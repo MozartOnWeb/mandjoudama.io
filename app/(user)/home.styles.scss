@@ -89,3 +89,38 @@
     }
   }
 }
+
+.error-page {
+  display: grid;
+  place-content: center;
+  gap: 1.8em;
+  height: 100vh;
+
+  h2 {
+    font-family: $body-font;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  button {
+    text-decoration: none;
+    width: 10em;
+    height: 2.6em;
+    color: $white;
+    background-color: $black;
+    border-radius: 8px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $heading-font;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 412px) {
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+}
