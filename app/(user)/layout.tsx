@@ -1,5 +1,7 @@
 import "../../sass/index.scss";
 
+import type { Metadata } from "next";
+
 //import components
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
@@ -7,7 +9,7 @@ import Footer from "@/components/footer/Footer";
 //import fonts
 import { Neue_Mechanica, Roboto_Mono, Satoshi } from "@/public/assets/fonts";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     default: "Mandjou Dama",
     template: "%s | Mandjou Dama",
@@ -33,7 +35,6 @@ export const metadata = {
   },
   verification: {
     google: "zJ3JUWckcXM-wlkSjQMzJZ6FQnY2FlqVTK_E6u7xcMs",
-    //yandex: "14d2e73487fa6c71",
     other: {
       me: ["mandjoudama@gmail.com", "https://mandjoudama.ml"],
     },
