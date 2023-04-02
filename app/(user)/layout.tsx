@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     shortcut: "/fav.ico",
   },
   verification: {
-    google: "zJ3JUWckcXM-wlkSjQMzJZ6FQnY2FlqVTK_E6u7xcMs",
+    google: "_PmIseyz3VvJwrGjQqJJYKHD_THMBlF7TxopDvZUOxQ",
     other: {
-      me: ["mandjoudama@gmail.com", "https://mandjoudama.ml"],
+      me: ["mandjoudama@gmail.com", "https://mandjoudama.com"],
     },
   },
 };
