@@ -10,10 +10,7 @@ import Footer from "@/components/footer/Footer";
 import { Neue_Mechanica, Roboto_Mono, Satoshi } from "@/public/assets/fonts";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Mandjou Dama",
-    template: "%s | Mandjou Dama",
-  },
+  title: "Mandjou Dama",
   keywords: ["Mandjou", "Dama"],
   description:
     "I'm Mandjou, a 24 years old react.js front-end developer from Mali.",
