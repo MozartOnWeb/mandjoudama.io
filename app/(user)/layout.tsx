@@ -27,6 +27,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  openGraph: {
+    images: "/opengraph-image.jpg",
+  },
   verification: {
     google: "_PmIseyz3VvJwrGjQqJJYKHD_THMBlF7TxopDvZUOxQ",
     other: {
