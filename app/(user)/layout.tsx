@@ -11,12 +11,26 @@ import { Neue_Mechanica, Roboto_Mono, Satoshi } from "@/public/assets/fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mandjoudama.com"),
-  title: "Mandjou Dama",
-  keywords: ["Mandjou", "Dama"],
-  description:
-    "I'm Mandjou, a 24 years old react.js front-end developer from Mali.",
-  category: "Technology",
-  creator: "Mandjou Dama",
+  title: {
+    default: "Mandjou Dama",
+    template: "%s | Mandjou Dama",
+  },
+  description: "Front-end web developer & UI designer.",
+  openGraph: {
+    title: "Mandjou Dama",
+    description: "Front-end web developer & UI designer.",
+    url: "https://mandjoudama.com",
+    siteName: "Mandjou Dama",
+    images: [
+      {
+        url: "https://mandjoudama.com/opengraph-image.jpg",
+        width: 1200,
+        height: 600,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
   robots: {
     index: true,
     follow: true,
@@ -27,9 +41,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  openGraph: {
-    images: "/opengraph-image.jpg",
   },
   verification: {
     google: "_PmIseyz3VvJwrGjQqJJYKHD_THMBlF7TxopDvZUOxQ",
@@ -45,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <body
         className={`${Neue_Mechanica.variable} ${Roboto_Mono.variable} ${Satoshi.variable}`}
       >
