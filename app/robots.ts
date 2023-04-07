@@ -5,7 +5,7 @@ export default function robots() {
         userAgent: "*",
       },
     ],
-    sitemap: "https://mandjoudama.ml/sitemap.xml",
-    host: "https://mandjoudama.ml",
+    sitemap: "https://mandjoudama.com/sitemap.xml",
+    host: "https://mandjoudama.com",
   };
 }
