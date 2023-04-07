@@ -10,6 +10,7 @@ import Footer from "@/components/footer/Footer";
 import { Neue_Mechanica, Roboto_Mono, Satoshi } from "@/public/assets/fonts";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mandjoudama.com"),
   title: "Mandjou Dama",
   keywords: ["Mandjou", "Dama"],
   description:
