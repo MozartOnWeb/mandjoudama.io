@@ -16,7 +16,7 @@ export async function POST(request: Request) {
   const client = mailgun.client({ username: "api", key: API_KEY });
 
   const messageData = {
-    from: `${name} <contact@mg.mandjoudama.com>`,
+    from: `${name} <contact@contact.mandjoudama.com>`,
     to: "mandjoudama@gmail.com",
     subject: "Let's Build Something Great Together!",
     text: ` Hello,
