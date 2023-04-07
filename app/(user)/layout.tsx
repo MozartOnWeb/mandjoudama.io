@@ -30,9 +30,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  icons: {
-    shortcut: "/fav.ico",
-  },
   verification: {
     google: "_PmIseyz3VvJwrGjQqJJYKHD_THMBlF7TxopDvZUOxQ",
     other: {

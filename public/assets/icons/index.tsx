@@ -1,46 +1,36 @@
 export const LogoSvg = () => {
   return (
     <svg
-      width="86"
-      height="75"
-      viewBox="0 0 86 75"
+      width="186"
+      height="186"
+      viewBox="0 0 186 186"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <rect width="186" height="186" rx="93" fill="#1E1E1E" />
+      <path d="M93.6001 25.1H91.6001V74.5H93.6001V25.1Z" fill="white" />
+      <path d="M93.6001 110.7H91.6001V160.1H93.6001V110.7Z" fill="white" />
+      <path d="M74.5 91.6H25.1001V93.6H74.5V91.6Z" fill="white" />
+      <path d="M160.1 91.6H110.7V93.6H160.1V91.6Z" fill="white" />
       <path
-        d="M85 37.3781H43.2073L22.311 1.24115H64.1037L85 37.3781Z"
-        stroke="#B8B8B8"
-        strokeMiterlimit="10"
-        strokeLinejoin="round"
+        d="M92.6001 138.9C67.0001 138.9 46.2001 118.1 46.2001 92.5C46.2001 66.9 67.0001 46.1 92.6001 46.1C118.2 46.1 139 66.9 139 92.5C139 118.1 118.1 138.9 92.6001 138.9ZM92.6001 48.2C68.1001 48.2 48.2001 68.1 48.2001 92.6C48.2001 117.1 68.1001 137 92.6001 137C117.1 137 137 117.1 137 92.6C137 68.1 117 48.2 92.6001 48.2Z"
+        fill="white"
       />
       <path
-        d="M85 37.3782H43.2073L22.311 73.5747H64.1037L85 37.3782Z"
-        stroke="#B8B8B8"
-        strokeMiterlimit="10"
-        strokeLinejoin="round"
+        d="M93.6001 91.6H110.7C110.2 82.4 102.8 75 93.6001 74.5V91.6Z"
+        fill="white"
       />
       <path
-        d="M30.8243 16.0055H55.5308L67.9138 37.3781L55.5308 58.8103H30.8243L18.4413 37.3781L30.8243 16.0055Z"
-        fill="#191919"
+        d="M91.6001 91.6V74.5C82.4001 75 75 82.4 74.5 91.6H91.6001Z"
+        fill="white"
       />
       <path
-        d="M22.311 1.24115H64.1037L85 37.3781L64.1037 73.5747H22.311L1.41461 37.3781L22.311 1.24115Z"
-        stroke="#B8B8B8"
-        strokeMiterlimit="10"
-        strokeLinejoin="round"
+        d="M91.6001 93.6H74.5C75 102.8 82.4001 110.2 91.6001 110.7V93.6Z"
+        fill="white"
       />
       <path
-        d="M64.1037 1.24115L43.2073 37.3781L64.1037 73.5747L85 37.3781L64.1037 1.24115Z"
-        stroke="#B8B8B8"
-        strokeMiterlimit="10"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M43.2073 37.3782H1.41461L22.311 73.5747H64.1037L43.2073 37.3782Z"
-        stroke="#B8B8B8"
-        strokeMiterlimit="10"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        d="M93.6001 93.6V110.7C102.8 110.2 110.2 102.8 110.7 93.6H93.6001Z"
+        fill="white"
       />
     </svg>
   );
