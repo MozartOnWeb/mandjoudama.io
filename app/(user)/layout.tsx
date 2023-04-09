@@ -48,6 +48,7 @@ export const metadata: Metadata = {
       me: ["mandjoudama@gmail.com", "https://mandjoudama.com"],
     },
   },
+  referrer: "origin-when-cross-origin",
 };
 
 export default function RootLayout({
