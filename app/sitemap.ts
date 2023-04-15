@@ -5,18 +5,18 @@ export default async function sitemap() {
   const works = await fetchAllWorks();
 
   const blogRoutes = blogs.map((blog: Blog) => ({
-    url: `https://mandjoudama.ml/blogs/${blog.slug}`,
+    url: `https://mandjoudama.com/blogs/${blog.slug}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));
 
   const workRoutes = works.map((work: Work) => ({
-    url: `https://mandjoudama.ml/works/${work.slug}`,
+    url: `https://mandjoudama.com/works/${work.slug}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));
 
   const routes = ["", "/services", "/works", "/contact", "/blogs"].map(
     (route) => ({
-      url: `https://mandjoudama.ml${route}`,
+      url: `https://mandjoudama.com${route}`,
       lastModified: new Date().toISOString().split("T")[0],
     })
   );
